@@ -1,6 +1,6 @@
 import 'animate.css';
 
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 
 import { useState } from "react";
@@ -9,61 +9,55 @@ import contactImg from "../assets/img/contact-img.svg";
 import TrackVisibility from 'react-on-screen';
 
 
-
 export const NewContact = () => {
 
-    const form = useRef();
-
-    const sendEmail = (e) => {
-      e.preventDefault();
-
-      emailjs.sendForm('gmailMessage', 'template_tf07n4u', form.current, 'ImR9OJuFzIxlzu-Nm')
-        .then((result) => {
-            setStatus({ succes: true, message: 'Message sent successfully'});
-        }, (error) => {
-            setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-        });
-        e.target.reset();
+    function mensagem(e) {
+        e.preventDefault();
+        var name = document.getElementById('name');
+        var email = document.getElementById('email');
+        var msg = document.getElementById('message');
+        const success = document.getElementById('success');
+        const danger = document.getElementById('danger');
+    
+        if(name.value === '' || email.value === '' || msg.value === '') {
+            danger.style.display = 'block';
+        } else {
+            setTimeout(() => {
+                name.value = '';
+                email.value = '';
+                msg.value = '';
+            }, 5000);
+    
+            success.style.display = 'block';
+        }
     };
 
-    // const [user, setUser] = useState({
-    //     name: '',
-    //     email: '',
-    //     message: ''
-    // })
+    // const [result, showResult] = useState(false);
+    const [buttonText, setButtonText] = useState('Send');
 
-    const [status, setStatus] = useState({});
+    const sendEmail = (e) => {
 
-    const formInitialDetails = {
-        name: '',
-        email: '',
-        message: ''
-      }
-      const [formDetails, setFormDetails] = useState(formInitialDetails);
-      const [buttonText, setButtonText] = useState('Send');
+      e.preventDefault();
 
-    
-      const onFormUpdate = (category, value) => {
-          setFormDetails({
-            ...formDetails,
-            [category]: value
-          })
-      }
+    //   setButtonText("Sending...");
+
+      emailjs.sendForm('gmailMessage', 'template_tf07n4u', e.current, 'ImR9OJuFzIxlzu-Nm')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        // e.target.reset();
+        // showResult(true)
+        // setButtonText('Send');
+    }
 
 
     return (
 
-        // <form ref={form} onSubmit={sendEmail}>
-        //     <label>Name</label>
-        //     <input type="text" name="user_name" />
-        //     <label>Email</label>
-        //     <input type="email" name="user_email" />
-        //     <label>Message</label>
-        //     <textarea name="message" />
-        //     <input type="submit" value="Send" />
-
     <section className="contact" id="connect">
       <Container>
+
         <Row className="align-items-center">
 
           <Col size={12} md={6}>
@@ -82,28 +76,60 @@ export const NewContact = () => {
 
                 <h2>Get In Touch</h2>
                 
-                    <form onSubmit={sendEmail} ref={form}>
+                    <form onSubmit={sendEmail} >
 
                         <Row>
+
                             <Col size={12} sm={6} className="px-1">
-                            <input type="text" value={formDetails.name} placeholder="Name" onChange={(e) => onFormUpdate('name', e.target.value)} name='name' />
+                            <input 
+                                type="text" 
+                                id='name'
+                                // value={formDetails.name} 
+                                placeholder="Name" 
+                                // onChange={(e) => onFormUpdate('name', e.target.value)} 
+                                name='name'
+                                required
+                                />
                             </Col>
 
                             <Col size={12} sm={6} className="px-1">
-                            <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} name='email'/>
+                            <input 
+                                type="email" 
+                                id='email'
+                                // value={formDetails.email} 
+                                placeholder="Email Address" 
+                                // onChange={(e) => onFormUpdate('email', e.target.value)} 
+                                name='email'
+                                required
+                                />
                             </Col>
 
                             <Col size={12} className="px-1">
-                            <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)} name='message'></textarea>
-                            {
-                            status.message &&
+                            <textarea 
+                                rows="6"
+                                id='msg'
+                                // value={formDetails.message} 
+                                placeholder="Message" 
+                                // onChange={(e) => onFormUpdate('message', e.target.value)} 
+                                name='message'
+                                required
+                                >
+                            </textarea>
+
                             <Col>
-                            <div className="alert alert-success" role="alert">
-                                <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                            </div>
+
+                                <div id='success' className="alert alert-success" role="alert">
+                                    <p>Message sent successfully</p>
+                                </div>
+
+                                <div id='danger' className="alert alert-success" role="alert">
+                                    <p>Complete the whole fields!</p>
+                                </div>
+
                             </Col>
-                            }
-                            <button type="submit"><span>{buttonText}</span></button>
+
+                            <button type="submit" onClick="mensagem()" id='send'><span>{buttonText}</span></button>
+                            
                             </Col>
 
                         </Row>
