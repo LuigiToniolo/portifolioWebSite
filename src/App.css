@@ -616,3 +616,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+.mensagens {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-bottom: 17px;
+} 
+
+.mensagens .success {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  animation: buttons .3s linear;
+}
+
+.mensagens .danger {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  transition: 0.3s;
+  animation: buttons .3s linear;
+}
+
+@keyframes buttons {
+  0% {
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
