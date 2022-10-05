@@ -617,7 +617,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-.mensagens {
+/* .mensagens {
   width: 100%;
   position: relative;
   display: flex;
@@ -649,4 +649,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   100% {
     transform: scale(1.0);
   }
-}
+} */

@@ -1,43 +1,18 @@
+import "animate.css";
+
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
-import "animate.css";
 import TrackVisibility from "react-on-screen";
-import emailjs from '@emailjs/browser'; 
-import { useRef } from 'react';
 
 export const Contact = () => {
-
-  function message(){
-
-    var name = document.getElementById('name');
-    var email = document.getElementById('email');
-    var msg = document.getElementById('msg');
-    const success = document.getElementById('success')
-    const danger = document.getElementById('danger')
-
-    if(name === '' || email === '' || msg === ''){
-      danger.style.display = 'block';
-    }
-    else {
-      setTimeout(() => {
-        name = '';
-        email = '';
-        msg = '';
-      }, 2000);
-
-      success.style.display = 'block';
-      
-    }
-
-    setTimeout(() => {
-      danger.style.display = 'none';
-      success.style.display = 'none';
-    }, 4000)
-  }
 
   const form = useRef();
 
   function sendEmail(e) {
+    e.preventDefault();
 
     emailjs
       .sendForm(
@@ -48,16 +23,51 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setStatus({ succes: true, message: "Message sent successfully" });
         },
         (error) => {
-          console.log(error.text);
+          setStatus({
+            succes: false,
+            message: "Something went wrong, please try again later.",
+          });
         }
       );
-      e.target.reset();
+    e.target.reset();
+  };
+
+  // const [user, setUser] = useState({
+  //     name: '',
+  //     email: '',
+  //     message: ''
+  // })
+
+  const [status, setStatus] = useState({});
+
+  const formInitialDetails = {
+    name: "",
+    email: "",
+    message: "",
+  };
+  const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [buttonText, setButtonText] = useState("Send");
+
+  const onFormUpdate = (category, value) => {
+    setFormDetails({
+      ...formDetails,
+      [category]: value,
+    });
   };
 
   return (
+    // <form ref={form} onSubmit={sendEmail}>
+    //     <label>Name</label>
+    //     <input type="text" name="user_name" />
+    //     <label>Email</label>
+    //     <input type="email" name="user_email" />
+    //     <label>Message</label>
+    //     <textarea name="message" />
+    //     <input type="submit" value="Send" />
+
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
@@ -74,69 +84,82 @@ export const Contact = () => {
               )}
             </TrackVisibility>
           </Col>
+
           <Col size={12} md={6}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <h2>Get In Touch</h2>
 
-            <div>
+                  <form onSubmit={sendEmail} ref={form}>
+                    <Row>
+                      <Col size={12} sm={6} className="px-1">
+                        <input
+                          type="text"
+                          value={formDetails.name}
+                          placeholder="Name"
+                          onChange={(e) => onFormUpdate("name", e.target.value)}
+                          name="name"
+                          required
+                        />
+                      </Col>
 
-              <h2>Get In Touch</h2>
-              <form ref={form} onSubmit={sendEmail}>
-                <Row>
-                  <Col size={12} sm={6} className="form-group">
-                    <input
-                      type="name"
-                      className="form-control"
-                      name="name"
-                      placeholder="Name"
-                      id="name"
-                    />
-                  </Col>
+                      <Col size={12} sm={6} className="px-1">
+                        <input
+                          type="email"
+                          value={formDetails.email}
+                          placeholder="Email Address"
+                          onChange={(e) =>
+                            onFormUpdate("email", e.target.value)
+                          }
+                          name="email"
+                          required
+                        />
+                      </Col>
 
-                  <Col size={12} sm={6} className="form-group">
-                    <input
-                      type="email"
-                      id="email"
-                      className="form-control"
-                      name="email"
-                      placeholder="Email"
-                    />
-                  </Col>
-
-                  <Col size={12} className="form-group">
-                    <textarea
-                      rows="6"
-                      ClassName="form-control"
-                      name="message"
-                      placeholder="Message"
-                      id="msg"
-                    ></textarea>
-
-                    <div className="mensagens">
-
-                      <div className="success" id="success">
-                        Your message Succesfully sent!
-                      </div>
-
-                      <div className="danger" id="danger">
-                        Fields can't be Empty!
-                      </div>
-                    </div>
-
-                    <button
-                      type="submit"
-                      onClick={message()}
-                    >
-                      Enviar
-                    </button>
-                  </Col>
-
-
-                </Row>
-              </form>
-            </div>
-            {/* </TrackVisibility> */}
+                      <Col size={12} className="px-1">
+                        <textarea
+                          rows="6"
+                          required
+                          value={formDetails.message}
+                          placeholder="Message"
+                          onChange={(e) =>
+                            onFormUpdate("message", e.target.value)
+                          }
+                          name="message"
+                        ></textarea>
+                        {status.message && (
+                          <Col>
+                            <div className="alert alert-success" role="alert">
+                              <p
+                                className={
+                                  status.success === false
+                                    ? "danger"
+                                    : "success"
+                                }
+                              >
+                                {status.message}
+                              </p>
+                            </div>
+                          </Col>
+                        )}
+                        <button type="submit">
+                          <span>{buttonText}</span>
+                        </button>
+                      </Col>
+                    </Row>
+                  </form>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
+    //   </form>
   );
 };
