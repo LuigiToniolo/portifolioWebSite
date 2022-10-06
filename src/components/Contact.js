@@ -90,7 +90,7 @@ export const Contact = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible ? "" : ""
                   }
                 >
                   <h2>Get In Touch</h2>

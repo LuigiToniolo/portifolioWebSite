@@ -650,3 +650,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: scale(1.0);
   }
 } */
+
+.logo {
+  width: 200px;
+  height: auto;
+}
