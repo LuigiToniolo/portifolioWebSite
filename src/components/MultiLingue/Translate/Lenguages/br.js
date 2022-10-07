@@ -1,5 +1,5 @@
 const messages = {
-    "pt-Br": {
+    "pt-BR": {
         translations: {
             navbar:{
                 home: 'Home',
