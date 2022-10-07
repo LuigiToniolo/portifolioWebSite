@@ -61,7 +61,7 @@ function MultiLanguage() {
   return (
     <>
 
-      <div className='select-language' style={open ? { height: '45px' } : { height: '45px' }}>
+      <div className='select-language' style={open ? { height: '35px' } : { height: '35px' }}>
         <Select
           styles={colourStyles}
           imagem={true}
