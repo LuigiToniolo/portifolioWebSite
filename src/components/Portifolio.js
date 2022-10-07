@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 
-export const Newsletter = () => {
+export const Portifolio = () => {
   return (
     <Col lg={12}>
       <div className="newsletter-bx wow slideInUp">
