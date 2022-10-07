@@ -230,6 +230,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+.select-lingua {
+  display: flex;
+  justify-content: center;
+  margin-left: 2.5%;
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;

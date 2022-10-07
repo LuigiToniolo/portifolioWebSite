@@ -30,14 +30,14 @@ function MultiLanguage() {
   };
 
   const colourStyles = {
-    control: (styles) => ({ ...styles, backgroundColor: 'transparent', marginLeft: '2%', width:'43%', cursor: 'pointer',
+    control: (styles) => ({ ...styles, backgroundColor: 'transparent', marginLeft: '2%', width:'80%', cursor: 'pointer',
     }),
     option: (styles, { data, isDisabled, isFocused, isSelected }) => {
       return {
         ...styles,
         color: '#D7DBEB',
         textAlign:'left',
-        backgroundColor: '#222a49',
+        backgroundColor: 'transparent',
         width:'auto',
         cursor: 'pointer',
         width:'auto',
@@ -49,19 +49,19 @@ function MultiLanguage() {
         }
       };
     },
-    menu: (styles) => ({ ...styles, backgroundColor: '#222a49', borderRadius:'4px', width:'auto',  marginLeft: '4%',}),
-    menuList: (styles) => ({ ...styles, backgroundColor: '#222a49', borderRadius:'4px', width:'127%'
+    menu: (styles) => ({ ...styles, backgroundColor: 'transparenty', borderRadius:'4px', width:'auto',  marginLeft: '4%',}),
+    menuList: (styles) => ({ ...styles, backgroundColor: 'transparent ', borderRadius:'4px', width:'127%'
   
   }),
     indicatorSeparator: (styles) => ({ ...styles, display: 'none'}),
     placeholder: (styles) => ({ ...styles, color: '#ffffff', ':hover': {color: '#9BA4CE'}}),
-    container: (styles) => ({ ...styles, width:'125%', borderRadius:'4px'}),
+    container: (styles) => ({ ...styles, width:'135%', borderRadius:'4px'}),
   };
 
   return (
     <>
 
-      <div className='select-language' style={open ? { height: '200px' } : { height: '40px' }}>
+      <div className='select-language' style={open ? { height: '45px' } : { height: '45px' }}>
         <Select
           styles={colourStyles}
           imagem={true}
