@@ -4,6 +4,7 @@ import logofooter from "../assets/img/Logo 2 branco.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import github from '../assets/img/GitHubIcon.png';
 
 export const Footer = () => {
   return (
@@ -16,9 +17,9 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/luigi-toniolo/"><img src={navIcon1} alt="Icon" /></a>
-              <a href="https://www.facebook.com/luigi.benetitoniolo/"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a target="blank" href="https://www.linkedin.com/in/luigi-toniolo/"><img src={navIcon1} alt="linkedin icon" /></a>
+              <a target="blank" href="https://www.facebook.com/luigi.benetitoniolo/"><img src={navIcon2} alt="facebook icon" /></a>
+              <a target="blank" href="https://github.com/LuigiToniolo"><img src={github} alt="github icon" /></a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
