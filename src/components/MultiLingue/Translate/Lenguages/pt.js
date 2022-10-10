@@ -9,7 +9,7 @@ const messages = {
             banner:{
                 portifolio: 'Bem vindo(a) a meu site!',
                 title1: "Olá! Sou Luigi,",
-                title2: "um Web Developer!",
+                title2: "Web Developer!",
                 descricao: "Tenho três anos de experiência como Desenvolvedor Frontal, com muito contacto com plataformas de desenvolvimento, tenho uma boa qualidade de código normalmente usando React.Js, Angular.Js, Flutter, MySQL. Nos projetos em que trabalho, uso sempre figma, Jira e Git. Além disso, ajudo as empresas a criar e manter uma melhor base de código para reutilização, componenteando todas as secções do site.",
                 connect: 'Fala comigo!',
             },
