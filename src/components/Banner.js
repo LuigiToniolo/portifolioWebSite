@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ i18n.t('banner.title2')];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">{i18n.t('banner.portifolio')}</span>
-                <h1>{i18n.t('banner.escrito')} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{i18n.t('banner.title1')} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>{i18n.t('banner.descricao')}</p>
                   <button onClick={() => console.log('connect')}>{i18n.t('banner.connect')}<ArrowRightCircle size={25} /></button>
               </div>}

@@ -1,4 +1,5 @@
 import { Col, Row } from "react-bootstrap";
+import { i18n } from "./MultiLingue/Translate/i18n";
 
 export const Portifolio = () => {
   return (
@@ -7,7 +8,7 @@ export const Portifolio = () => {
         <Row>
           <Col lg={12} md={6} xl={5}>
             <h3>
-              Click in the button<br></br>and Download my Resume!
+            {i18n.t('portifolio.title1')}<br></br>{i18n.t('portifolio.title2')}
             </h3>
           </Col>
 
@@ -23,7 +24,7 @@ export const Portifolio = () => {
                   href="Luigi_Toniolo_Resume.pdf"
                   download="Luigi Toniolo Resume.pdf"
                 >
-                  <span>Download my Portifolio ;)</span>
+                  <span>{i18n.t('portifolio.button')}</span>
                 </button>
               </a>
             </div>

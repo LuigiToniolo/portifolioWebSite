@@ -1,5 +1,5 @@
 import "animate.css";
-
+import { i18n } from "./MultiLingue/Translate/i18n";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -49,7 +49,7 @@ export const Contact = () => {
     message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
+  // const [buttonText, setButtonText] = useState();
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -93,7 +93,7 @@ export const Contact = () => {
                     isVisible ? "" : ""
                   }
                 >
-                  <h2>Get In Touch</h2>
+                  <h2>{i18n.t('contact.title')}</h2>
 
                   <form onSubmit={sendEmail} ref={form}>
                     <Row>
@@ -101,7 +101,7 @@ export const Contact = () => {
                         <input
                           type="text"
                           value={formDetails.name}
-                          placeholder="Name"
+                          placeholder={i18n.t('contact.name')}
                           onChange={(e) => onFormUpdate("name", e.target.value)}
                           name="name"
                           required
@@ -112,7 +112,7 @@ export const Contact = () => {
                         <input
                           type="email"
                           value={formDetails.email}
-                          placeholder="Email Address"
+                          placeholder={i18n.t('contact.email')}
                           onChange={(e) =>
                             onFormUpdate("email", e.target.value)
                           }
@@ -126,7 +126,7 @@ export const Contact = () => {
                           rows="6"
                           required
                           value={formDetails.message}
-                          placeholder="Message"
+                          placeholder={i18n.t('contact.message')}
                           onChange={(e) =>
                             onFormUpdate("message", e.target.value)
                           }
@@ -148,7 +148,7 @@ export const Contact = () => {
                           </Col>
                         )}
                         <button type="submit">
-                          <span>{buttonText}</span>
+                          <span>{i18n.t('contact.button')}</span>
                         </button>
                       </Col>
                     </Row>
