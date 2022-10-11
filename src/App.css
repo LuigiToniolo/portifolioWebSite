@@ -346,6 +346,73 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.single-chart {
+  /* width: 33%; */
+  display: flex;
+  margin-left: 3.8vw;
+  justify-content: center;
+  display: flex;
+  width: 170px;
+
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #AA367C;
+}
+
+.percentage {
+  fill: #fff;
+  font-family: centra, sans-serif;
+  font-size: 0.35em;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  text-anchor: middle;
+  cursor: default;
+  transition: all .1s ease-in-out;
+}
+
+.percentage:hover {
+  font-size: 0.45em;
+}
+
+
+.percentage-text {
+  display: flex;
+  justify-content: center;
+}
+
+
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -585,7 +652,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 0;
   left: 0;
   z-index: 0;
-  transition: 0.4s ease-in-out;
+  transition: 0.9s ease-in-out;
 
 }
 .portifolio button:hover::before {

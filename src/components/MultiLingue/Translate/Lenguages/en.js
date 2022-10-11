@@ -15,7 +15,7 @@ const messages = {
             },
             skills: {
                 title: 'Skills',
-                subtitle: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."
+                subtitle: "Those are some of my skills that I worked on in all my programs as a web developer. Here they are included as both front-end and back-end languages. Also, I have experience in mobile development!"
             },
             projects: {
                 title: "Projects",

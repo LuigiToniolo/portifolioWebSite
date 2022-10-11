@@ -27,6 +27,49 @@ export const Skills = () => {
     }
   };
 
+  const skills = {
+    skill1: {
+      percentage: '90%',
+      name: 'Html5 / CSS3 / SASS',
+    },
+    skill2: {
+      percentage: '85%',
+      name: 'JavaScript',
+    },
+    skill3: {
+      percentage: '90%',
+      name: 'WordPress',
+    },
+    skill4: {
+      percentage: '75%',
+      name: 'Dart / Flutter',
+    },
+    skill5: {
+      percentage: '90%',
+      name: 'React.Js',
+    },
+    skill6: {
+      percentage: '75%',
+      name: 'Angular',
+    },
+    skill7: {
+      percentage: '70%',
+      name: 'ASP.Net / C#',
+    },
+    skill8: {
+      percentage: '95%',
+      name: 'Git & GitHub',
+    },
+    skill9: {
+      percentage: '75%',
+      name: 'MySql',
+    },
+    skill10: {
+      percentage: '95%',
+      name: 'Jira / Figma',
+    },
+  };
+
   return (
     <section className="skill" id="skills">
         <div className="container">
@@ -35,23 +78,199 @@ export const Skills = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>{i18n.t('skills.title')}</h2>
                         <p>{i18n.t('skills.subtitle')}</p>
+
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+
+                              <div className="single-chart">
+                                <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                  <path className="circle"
+                                    stroke-dasharray="90, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <text x="19.5" y="20.35" className="percentage">{skills.skill1.percentage}</text>
+                                </svg>
+                              </div>
+                              <div className="percentage-text">
+                                <h5>{skills.skill1.name}</h5>
+                              </div>
+
                             </div>
+
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+
+                            <div className="single-chart">
+                                <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                  <path className="circle"
+                                    stroke-dasharray="85, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <text x="19.5" y="20.35" className="percentage">{skills.skill2.percentage}</text>
+                                </svg>
+                              </div>
+                              <div className="percentage-text">
+                                <h5>{skills.skill2.name}</h5>
+                              </div>
+
                             </div>
+
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+
+                              <div className="single-chart">
+                                <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                  <path className="circle"
+                                    stroke-dasharray="90, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <text x="19.5" y="20.35" className="percentage">{skills.skill3.percentage}</text>
+                                </svg>
+                              </div>
+                              <div className="percentage-text">
+                                <h5>{skills.skill3.name}</h5>
+                              </div>
+
                             </div>
+
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+
+                              <div className="single-chart">
+                                <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                  <path className="circle"
+                                    stroke-dasharray="75, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <text x="19.5" y="20.35" className="percentage">{skills.skill4.percentage}</text>
+                                </svg>
+                              </div>
+                              <div className="percentage-text">
+                                <h5>{skills.skill4.name}</h5>
+                              </div>
+
                             </div>
+
+                            <div className="item">
+
+                            <div className="single-chart">
+                              <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                <path className="circle"
+                                  stroke-dasharray="90, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="19.5" y="20.35" className="percentage">{skills.skill5.percentage}</text>
+                              </svg>
+                            </div>
+                            <div className="percentage-text">
+                              <h5>{skills.skill5.name}</h5>
+                            </div>
+
+                          </div>
+
+                          <div className="item">
+
+                            <div className="single-chart">
+                              <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                <path className="circle"
+                                  stroke-dasharray="75, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="19.5" y="20.35" className="percentage">{skills.skill6.percentage}</text>
+                              </svg>
+                            </div>
+                            <div className="percentage-text">
+                              <h5>{skills.skill6.name}</h5>
+                            </div>
+
+                          </div>
+
+                          <div className="item">
+
+                            <div className="single-chart">
+                              <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                <path className="circle"
+                                  stroke-dasharray="70, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="19.5" y="20.35" className="percentage">{skills.skill7.percentage}</text>
+                              </svg>
+                            </div>
+                            <div className="percentage-text">
+                              <h5>{skills.skill7.name}</h5>
+                            </div>
+
+                          </div>
+
+                          <div className="item">
+
+                            <div className="single-chart">
+                              <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                <path className="circle"
+                                  stroke-dasharray="95, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="19.5" y="20.35" className="percentage">{skills.skill8.percentage}</text>
+                              </svg>
+                            </div>
+                            <div className="percentage-text">
+                              <h5>{skills.skill8.name}</h5>
+                            </div>
+
+                          </div>
+
+                          <div className="item">
+
+                            <div className="single-chart">
+                              <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                <path className="circle"
+                                  stroke-dasharray="75, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="19.5" y="20.35" className="percentage">{skills.skill9.percentage}</text>
+                              </svg>
+                            </div>
+                            <div className="percentage-text">
+                              <h5>{skills.skill9.name}</h5>
+                            </div>
+
+                          </div>
+
+                          <div className="item">
+
+                            <div className="single-chart">
+                              <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                <path className="circle"
+                                  stroke-dasharray="95, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="19.5" y="20.35" className="percentage">{skills.skill10.percentage}</text>
+                              </svg>
+                            </div>
+                            <div className="percentage-text">
+                              <h5>{skills.skill10.name}</h5>
+                            </div>
+
+                          </div>
+
                         </Carousel>
                     </div>
                 </div>
