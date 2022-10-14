@@ -8,7 +8,7 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import github from '../assets/img/GitHubIcon.png';
 import { HashLink } from 'react-router-hash-link';
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router, Link
 } from "react-router-dom";
 
 export const NavBar = () => {
@@ -46,8 +46,8 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>{i18n.t('navbar.home')}</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>{i18n.t('navbar.skill')}</Nav.Link>
+              <Nav.Link href="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>{i18n.t('navbar.home')}</Nav.Link>
+              <Nav.Link href="/aboutme" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} to='/aboutme'>{i18n.t('navbar.skill')}</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>{i18n.t('navbar.projects')}</Nav.Link>
             </Nav>
             <span className="navbar-text">

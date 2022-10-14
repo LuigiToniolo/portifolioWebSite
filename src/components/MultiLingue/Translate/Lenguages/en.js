@@ -3,7 +3,7 @@ const messages = {
         translations: {
             navbar: {
                 home: 'Home',
-                skill: 'Skill',
+                skill: 'About Me',
                 projects: 'Projects'
             },
             banner: {

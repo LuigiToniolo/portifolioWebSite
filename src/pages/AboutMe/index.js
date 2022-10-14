@@ -9,7 +9,7 @@ function AboutMe () {
     return (
         <div className="aboutMe">
             <NavBar />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 
