@@ -1,0 +1,77 @@
+@font-face {
+	font-family: Centra;
+	src: url('../font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('../font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('../font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+
+.perfil {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+}
+
+.title {
+    font-family: 'Centra', sans-serif !important;
+    color: #fff;
+}
+
+.content{
+    width: 50%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagemPerfil {
+    margin: 45px 0;
+    width: 150px;
+    height: 150px;
+    border-top-left-radius: 50% 50%; 
+    border-top-right-radius: 50% 50%; 
+    border-bottom-right-radius: 50% 50%; 
+    border-bottom-left-radius: 50% 50%;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Centra', sans-serif !important;
+    color: #fff;
+}
+
+.rodape {
+    padding: 0 0 50px 0;
+    background-image: url('../img/footer-bg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rodape img {
+    width: 26%;
+  }
+
+.rodape p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #B8B8B8;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+
+.logorodape {
+    margin-top: 20px;
+}
