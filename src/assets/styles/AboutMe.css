@@ -26,34 +26,91 @@
 .title {
     font-family: 'Centra', sans-serif !important;
     color: #fff;
+    margin-bottom: 5px;
+}
+
+.subtitle1 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #7C7C8A;
 }
 
 .content{
-    width: 50%;
-    margin-top: 150px;
+    /* margin: 0px 300px; */
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.imagemPerfil {
+
+
+#imagemPerfil {
     margin: 45px 0;
-    width: 150px;
-    height: 150px;
+    width: 190px;
+    height: 190px;
     border-top-left-radius: 50% 50%; 
     border-top-right-radius: 50% 50%; 
     border-bottom-right-radius: 50% 50%; 
     border-bottom-left-radius: 50% 50%;
 }
 
+
 .subtitle {
     text-align: center;
     font-family: 'Centra', sans-serif !important;
-    color: #fff;
+    color: #C4C4CC;
 }
 
+#history {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+.education {
+    align-items: flex-start;
+    width: 50%;
+}
+
+.cardContent {
+    /* width: 80%; */
+    border-left: #C4C4CC 2px solid;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.textContent {
+    color: #C4C4CC!important;
+}
+
+.read-more-less--more,
+.read-more-less--less {
+    color: #C4C4CC;
+    margin-left: 10px;
+    border: 1px #7C7C8A solid;
+    padding: 2px 15px;
+}
+
+.read-more-less--more:hover,
+.read-more-less--less:hover {
+    color: #7C7C8A;
+    background-color: #fff;
+    border: 1px #fff solid;
+    transition: all 0.5s;
+}
+
+
+.personalSkills {
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+
 .rodape {
-    padding: 0 0 50px 0;
     background-image: url('../img/footer-bg.png');
     background-position: center center;
     background-size: cover;
@@ -69,9 +126,5 @@
     font-size: 14px;
     color: #B8B8B8;
     letter-spacing: 0.5px;
-    margin-top: 20px;
-}
-
-.logorodape {
     margin-top: 20px;
 }

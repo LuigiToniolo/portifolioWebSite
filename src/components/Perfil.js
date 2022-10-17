@@ -3,16 +3,93 @@ import '../assets/styles/AboutMe.css';
 import FotoPerfil from '../assets/img/foto perfil nova.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FooterPages } from './FooterPages';
+import { i18n } from "./MultiLingue/Translate/i18n";
+import { Container } from 'react-bootstrap';
+import TrackVisibility from 'react-on-screen';
+import ReactReadMoreReadLess from "react-read-more-read-less";
+import ReactDOM from "react-dom";
 
 export function Perfil () {
+
     return (
             <div className="perfil">
 
-                <div className='content'>
-                    <h1 className='title'>Olá, esse sou eu!</h1>
-                    <img src={FotoPerfil} href='foto de perfil luigi' className='imagemPerfil'/>
-                    <p className='subtitle'>My name is Luigi Toniolo, I’m Brazilian and Italian citizen. I'm majoring in electrical engineering at the Federal University of São Carlos (UFSCar) located in São Paulo State, Brazil. In addition to studying engineering, I am a web developer with great knowledge in front-end programming. With that, in my current job, I was inserted into several projects that use some of the most famous frameworks like React Js, React Native, Angular, Flutter and WordPress. The latter, I have a high level of understanding of how it works, and, in addition to mastering this platform, I have complete mastery of some plugins such as woocommerce, elementor, etc. In addition to the frameworks used to develop my projects, I have a high level of knowledge in the following programming languages: JavaScript, Git, Html, CSS, Typescript, Dart, Python and C++. I also find it very easy to follow design prototypes (UI/UX) like the figma platform. Because I did a student exchange program in 2016 to Italy, I consider myself to have an advanced knowledge of the English language and a basic proficiency of italian one.</p>
-                </div>
+                <Container className='content'>
+                    <TrackVisibility offset={1000}> 
+                    {({ isVisible }) => (
+                        <img 
+                            src={FotoPerfil} 
+                            href='foto de perfil luigi' 
+                            id='imagemPerfil' 
+                            className={ isVisible ? "animate__animated animate__zoomIn" : "" 
+                        }/>
+                    )}
+                    </TrackVisibility>
+
+                    <h1 className='title'>{i18n.t('aboutme.title')}</h1>
+                    <h6 className='subtitle1'>{i18n.t('aboutme.subtitle1')}</h6>
+                    <p className='subtitle'>{i18n.t('aboutme.subtitle')}</p>
+                </Container>
+
+                <TrackVisibility offset={1000}>
+                {({ isVisible }) => (
+                    <Container 
+                        id='history' 
+                        className={ isVisible ? "animate__animated animate__fadeInUp" : "" }>
+                        <div className='education'>
+
+                            <h3 className='historyTitle'>{i18n.t('education.historyTitle')}</h3>
+                            <div className='cardContent'>
+                                <h4 class="text-">{i18n.t('education.title')}</h4>
+                                <p class="mb-2">{i18n.t('education.subtitle')}</p>
+                                <p class="textContent">
+                                    {i18n.t('education.content')} 
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div className='personalSkills'>
+                            <h3 className='historyTitle'>{i18n.t('personalSkills1.historyTitle')}</h3>
+                            <div className='cardContent'>
+                                <h4 class="text-">{i18n.t('personalSkills1.title')}</h4>
+                                <p class="mb-2">{i18n.t('personalSkills1.subtitle')}</p>
+                                <div className='textContent'>
+                                    <ReactReadMoreReadLess
+                                        charLimit={250}
+                                        readMoreText={i18n.t('personalSkills1.readMore')}
+                                        readLessText={i18n.t('personalSkills1.readLess')}
+                                        readMoreClassName="read-more-less--more"
+                                        readLessClassName="read-more-less--less"
+                                    >
+                                        {i18n.t('personalSkills1.content')}
+                                    </ReactReadMoreReadLess>
+
+                                </div>
+                            </div>
+
+                            <div className='cardContent'>
+                                <h4 class="text-">{i18n.t('personalSkills2.title')}</h4>
+                                <p class="mb-2">{i18n.t('personalSkills2.subtitle')}</p>
+                                <div className='textContent'>
+                                <ReactReadMoreReadLess
+                                        charLimit={250}
+                                        readMoreText={i18n.t('personalSkills1.readMore')}
+                                        readLessText={i18n.t('personalSkills1.readLess')}
+                                        readMoreClassName="read-more-less--more"
+                                        readLessClassName="read-more-less--less"
+                                    >
+                                        {i18n.t('personalSkills2.content')}
+                                    </ReactReadMoreReadLess>
+                                </div>
+                            </div>
+                        </div>
+
+                    </Container>
+                )}
+                </TrackVisibility>
+
+
 
                 <div className='rodape'>
                     <FooterPages/>
