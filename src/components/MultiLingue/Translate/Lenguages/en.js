@@ -6,6 +6,10 @@ const messages = {
                 skill: 'About Me',
                 projects: 'Projects'
             },
+            footer: {
+                copy: 'Copyright 2022. All Rights Reserved.',
+                develop: 'Website developed by Luigi Toniolo.'
+            },
             banner: {
                 portifolio: 'Welcome to my portifolio!',
                 title1: "Hi! I'm Luigi,",

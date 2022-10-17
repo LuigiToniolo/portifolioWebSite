@@ -7,7 +7,6 @@ import { i18n } from "./MultiLingue/Translate/i18n";
 import { Container } from 'react-bootstrap';
 import TrackVisibility from 'react-on-screen';
 import ReactReadMoreReadLess from "react-read-more-read-less";
-import ReactDOM from "react-dom";
 
 export function Perfil () {
 
