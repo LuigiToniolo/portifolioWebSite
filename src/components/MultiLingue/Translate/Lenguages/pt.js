@@ -48,7 +48,9 @@ const messages = {
                 historyTitle: 'Meu trabalho',
                 title: 'Desenvolvedor Full satack Junior',
                 subtitle: 'Domvs iT / Jul 2021 - Atual',
-                content: 'Desenvolvi e implementei o projeto inteiro do site interno da empresa que eu trabalho com o auxílio das ferramentas Figma, usando React.js como framework,  Git e o software Jira para manter uma melhor organização das tarefas. Além disso, tive a oportunidade de trabalhar em parceria com uma empresa alemã e trabalhei em uma squad hibrida com pessoas de diversas nacionalidades, como Paquistão, India, México e Estados Unidos. Desenvolvi também um aplicativo pessoal que consistia na criação de um banco virtual com página de usuário, login, validação de usuário e um design único. Vale dizer que em todos esses projetos, eu utilizei e utilizo a metodologia ágil (Scrum) e costumo realizar todas as cerimônias.'
+                content: 'Desenvolvi e implementei o projeto inteiro do site interno da empresa que eu trabalho com o auxílio das ferramentas Figma, usando React.js como framework,  Git e o software Jira para manter uma melhor organização das tarefas. Além disso, tive a oportunidade de trabalhar em parceria com uma empresa alemã e trabalhei em uma squad hibrida com pessoas de diversas nacionalidades, como Paquistão, India, México e Estados Unidos. Desenvolvi também um aplicativo pessoal que consistia na criação de um banco virtual com página de usuário, login, validação de usuário e um design único. Vale dizer que em todos esses projetos, eu utilizei e utilizo a metodologia ágil (Scrum) e costumo realizar todas as cerimônias.',
+                readLess: 'Ler menos',
+                readMore: 'Ler Mais'
             },
             personalSkills2: {
                 title: 'Gestor de projeto',

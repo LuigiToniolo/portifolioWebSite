@@ -53,7 +53,7 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
+            <TrackVisibility >
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">{i18n.t('banner.portifolio')}</span>

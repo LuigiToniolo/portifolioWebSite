@@ -48,7 +48,9 @@ const messages = {
                 historyTitle: 'My Works',
                 title: 'Full Satack Junior Developer',
                 subtitle: 'Domvs iT / Jul 2021 - Current',
-                content: "I developed and implemented the entire project of the company's internal website that I work with the help of Figma tools, using React.js as a framework, Git and Jira software to maintain a better organization of tasks. In addition, I had the opportunity to work in partnership with a German company and worked in a hybrid squad with people of different nationalities, such as Pakistan, India, Mexico and the United States. I also developed a personal application that consisted of creating a virtual bank with a user page, login, user validation and a unique design. It is worth mentioning that in all these projects, I used and still use the agile methodology (Scrum) and I usually perform all the ceremonies."
+                content: "I developed and implemented the entire project of the company's internal website that I work with the help of Figma tools, using React.js as a framework, Git and Jira software to maintain a better organization of tasks. In addition, I had the opportunity to work in partnership with a German company and worked in a hybrid squad with people of different nationalities, such as Pakistan, India, Mexico and the United States. I also developed a personal application that consisted of creating a virtual bank with a user page, login, user validation and a unique design. It is worth mentioning that in all these projects, I used and still use the agile methodology (Scrum) and I usually perform all the ceremonies.",
+                readLess: 'Read Less',
+                readMore: 'Read More'
             },
             personalSkills2: {
                 title: 'Project Manager',
