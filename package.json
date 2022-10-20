@@ -5,6 +5,8 @@
   "proxy": "http://localhost:5000/contact",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.10",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

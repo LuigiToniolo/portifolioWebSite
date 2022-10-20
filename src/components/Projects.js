@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { i18n } from "./MultiLingue/Translate/i18n";
-import { ProjectCard } from "./ProjectCard";
+// import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
@@ -8,10 +8,24 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react';
-import App from "./Modal";
-
+import { Dialog } from "@mui/material";
+// import Modal from './Modal';
 
 export const Projects = () => {
+
+  //   state = {
+  //   showModal: null
+  // };
+
+  // getModal = (projects) => {
+  //   this.setState({ showModal: projects });
+  // };
+  // hideModal = () => {
+  //   this.setState({ showModal: null });
+  // };
+
+  // const { images, onHide } = this.props ;
+
 
   const projects = [
     {
@@ -46,6 +60,8 @@ export const Projects = () => {
     },
   ];
 
+
+
   return (
     <section className="project" id="project">
       <Container>
@@ -73,19 +89,39 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
 
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
+                        {projects.map((projects) => {
+                            return(
+                              <Col size={12} sm={6} md={4}>
+                              <div className="proj-imgbx">
+                        
+                                <img 
+                                  src={projects.imgUrl}
+                                  onClick={() => this.getModal(projects)}
+                                  alt=""
                                 />
+                                <div className="proj-txtx">
+                                  <h4>{projects.title}</h4>
+                                  <span>{projects.description}</span>
+                                </div>
+                              </div>
+                            </Col>
                             )
-                          })
-                        }
-
+                        })}
 
                       </Row>
+
+                      {/* <Dialog open={true} onClose={onHide}>
+                        <div className="modal">
+                          <p>Olá mundo</p>
+                        </div>
+                      </Dialog> */}
+
+                      {/* {projects.showModal && (
+                        <Modal onHide={projects.hideModal} images={projects.showModal?.imgUrl} />
+                      )} */}
+
+
+
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
