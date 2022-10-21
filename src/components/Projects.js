@@ -8,38 +8,47 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react';
-import Modal from "./Modal";
+import { UIModal } from "./Modal";
+import { useState } from "react";
 
 
-export const Projects = () => {
+export const Projects = (onClickCard) => {
+
+  const [projectId, setProjectId] = useState(null)
 
   const projects = [
     {
+      id: 1,
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
     },
     {
+      id: 2,
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
+      id: 3,
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
     },
     {
+      id: 4,
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
     },
     {
+      id:5,
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
+      id: 6,
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
@@ -53,53 +62,53 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>{i18n.t('projects.title')}</h2>           
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>{i18n.t('projects.title')}</h2>
+              
+                  <p>{i18n.t('projects.subtitle')}</p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="first">
+                        <Row>
 
-                <p>{i18n.t('projects.subtitle')}</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
+                          {
+                            projects.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  onClickCard={setProjectId}
+                                  key={index}
+                                  {...project}
                                 />
-                            )
-                          })
-                        }
+                              )
+                            })
+                          }
 
-                        <Modal isopen>
-                          <h1>Comentários</h1>
-                        </Modal>
+                          <UIModal isopen={Boolean(projectId)} onClickClose={() => (projects.id)} >
+                            <h1>Comentários</h1>
+                          </UIModal>
 
-
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="section">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>

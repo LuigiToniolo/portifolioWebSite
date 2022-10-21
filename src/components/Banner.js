@@ -57,7 +57,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">{i18n.t('banner.portifolio')}</span>
-                <h1>{i18n.t('banner.title1')} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{i18n.t('banner.title1')} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>{i18n.t('banner.descricao')}</p>
                   <button onClick={() => console.log('connect')}>{i18n.t('banner.connect')}<ArrowRightCircle size={25} /></button>
               </div>}
