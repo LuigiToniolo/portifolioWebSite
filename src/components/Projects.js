@@ -8,7 +8,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react';
-import App from "./Modal";
+import Modal from "./Modal";
 
 
 export const Projects = () => {
@@ -83,6 +83,10 @@ export const Projects = () => {
                             )
                           })
                         }
+
+                        <Modal isopen>
+                          <h1>Comentários</h1>
+                        </Modal>
 
 
                       </Row>
