@@ -8,12 +8,8 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react';
-import { useState } from "react";
 
-
-export const Projects = (onClickCard) => {
-
-  // const [projectId, setProjectId] = useState(null)
+export const Projects = () => {
 
   const projects = [
     {
@@ -41,7 +37,7 @@ export const Projects = (onClickCard) => {
       imgUrl: projImg1,
     },
     {
-      id:5,
+      id: 5,
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
@@ -63,7 +59,7 @@ export const Projects = (onClickCard) => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>{i18n.t('projects.title')}</h2>
-              
+
                   <p>{i18n.t('projects.subtitle')}</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -84,7 +80,6 @@ export const Projects = (onClickCard) => {
                             projects.map((project, index) => {
                               return (
                                 <ProjectCard
-                                  onClickCard={() => setProjectId(project.id)}
                                   key={index}
                                   {...project}
                                 />

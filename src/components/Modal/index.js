@@ -1,32 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { useEffect } from "react";
+import "./modal.css";
 
-const portalRoot = document.getElementById('portal-root')
+const ModalContent = () => {
 
-export const UIModal = ({children, isOpen, onClickClose}) => {
+    return (
+        <div className='conteudo-modal'>
+            <h2 className='titulo-modal'>Toniolo Joias</h2>
+            
+        </div>
 
+    );
+}
 
-    // useEffect(() => {
-    //     const closeOnEscapeKey = e => e.key === "Escape" ? onClickClose() : null;
-    //     document.body.addEventListener("keydown", closeOnEscapeKey);
-    //     return () => {
-    //       document.body.removeEventListener("keydown", closeOnEscapeKey);
-    //     };
-    //   }, [onClickClose]);
+export default ModalContent;
 
-    if(!isOpen) {
-        return null;
-    }
-
-        return ReactDOM.createPortal(
-            <div className='ui-modal-overlay'>
-                <div className='ui-modal'>
-                    <button type='button' className='ui-modal__close-button' onClick={onClickClose}>X</button>
-                    {children}
-                </div>
-            </div>,
-            portalRoot
-        );
-
-};

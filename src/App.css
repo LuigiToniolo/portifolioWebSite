@@ -542,28 +542,63 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Modal Css ************/
 
-.ui-modal {
-  background-color: #fff;
-  border-radius: 4px;
-  max-width: 800px;
-  margin: 180px auto 0 auto;
-  padding: 15px;
+.botao-modal {
+  color: #000;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  margin-left: 95%;
+  transition: all .5s ease;
 }
 
-.ui-modal-overlay {
+.botao-modal:hover {
+  color: #000;
+  border: 1px solid #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+  
+
+}
+
+.mymodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+
+}
+
+.myoverlay {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.5);
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
-.ui-modal__close-button {
-  float: right;
-  background: unset; 
-  border: unset;
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
 }
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+
+
 
 
 /************ Projects Css ************/
