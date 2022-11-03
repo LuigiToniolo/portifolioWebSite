@@ -8,13 +8,12 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react';
-import { UIModal } from "./Modal";
 import { useState } from "react";
 
 
 export const Projects = (onClickCard) => {
 
-  const [projectId, setProjectId] = useState(null)
+  // const [projectId, setProjectId] = useState(null)
 
   const projects = [
     {
@@ -81,23 +80,17 @@ export const Projects = (onClickCard) => {
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
                         <Row>
-
                           {
                             projects.map((project, index) => {
                               return (
                                 <ProjectCard
-                                  onClickCard={setProjectId}
+                                  onClickCard={() => setProjectId(project.id)}
                                   key={index}
                                   {...project}
                                 />
                               )
                             })
                           }
-
-                          <UIModal isopen={Boolean(projectId)} onClickClose={() => (projects.id)} >
-                            <h1>Comentários</h1>
-                          </UIModal>
-
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">

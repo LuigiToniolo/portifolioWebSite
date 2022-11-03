@@ -559,7 +559,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: rgba(0,0,0,0.5);
 }
 
-.ui-modal-close-button {
+.ui-modal__close-button {
   float: right;
   background: unset; 
   border: unset;
