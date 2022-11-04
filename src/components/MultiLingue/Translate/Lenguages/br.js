@@ -22,6 +22,7 @@ const messages = {
                 subtitle: "Essas são algumas das minhas habilidades que atuei em todos os meus projetos como programador. Aqui estão inseridas tanto as linguagens de front-end, quanto as de back-end. Além disso, eu tenho experiência em desenvolvimento mobile!"
             },
             projects: {
+                techTitle: "Tecnologias usadas",
                 title: "Projetos",
                 subtitle: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             },

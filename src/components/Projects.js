@@ -10,49 +10,11 @@ import TrackVisibility from "react-on-screen";
 import React, { useState } from "react";
 import Modal from "react-modal";
 import {ModalContent1, ModalContent2, ModalContent3 } from "../components/Modal/index";
+import { data } from "../components/Modal/data";
 
 Modal.setAppElement("#root");
 
 export const Projects = () => {
-
-  // const projects = [
-  //   {
-  //     id: 1,
-  //     title: "Business Startup",
-  //     description: "Design & Development",
-  //     imgUrl: projImg1,
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Business Startup",
-  //     description: "Design & Development",
-  //     imgUrl: projImg2,
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Business Startup",
-  //     description: "Design & Development",
-  //     imgUrl: projImg3,
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Business Startup",
-  //     description: "Design & Development",
-  //     imgUrl: projImg1,
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "Business Startup",
-  //     description: "Design & Development",
-  //     imgUrl: projImg2,
-  //   },
-  //   {
-  //     id: 6,
-  //     title: "Business Startup",
-  //     description: "Design & Development",
-  //     imgUrl: projImg3,
-  //   },
-  // ];
 
   const [isOpen1, setIsOpen1] = useState(false);
 
@@ -115,8 +77,8 @@ export const Projects = () => {
                             <div className="proj-imgbx" onClick={toggleModal1}>
                               <img src={projImg1} />
                               <div className="proj-txtx">
-                                <h4>Business Startup</h4>
-                                <span>Design & Development</span>
+                                <h4>{data.modal1.title}</h4>
+                                <span>{data.modal1.subtitle}</span>
                               </div>
                             </div>
                           </Col>
@@ -140,8 +102,8 @@ export const Projects = () => {
                             <div className="proj-imgbx" onClick={toggleModal2}>
                               <img src={projImg2} />
                               <div className="proj-txtx">
-                                <h4>Business Startup</h4>
-                                <span>Design & Development</span>
+                                <h4>{data.modal2.title}</h4>
+                                <span>{data.modal2.subtitle}</span>
                               </div>
                             </div>
                           </Col>
@@ -165,8 +127,8 @@ export const Projects = () => {
                             <div className="proj-imgbx" onClick={toggleModal3}>
                               <img src={projImg2} />
                               <div className="proj-txtx">
-                                <h4>Business Startup</h4>
-                                <span>Design & Development</span>
+                              <h4>{data.modal3.title}</h4>
+                                <span>{data.modal3.subtitle}</span>
                               </div>
                             </div>
                           </Col>
@@ -190,7 +152,7 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          testeLorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
                           explicabo excepturi id illo molestiae blanditiis,
                           eligendi dicta officiis asperiores delectus quasi
@@ -199,7 +161,7 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          testLorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
                           explicabo excepturi id illo molestiae blanditiis,
                           eligendi dicta officiis asperiores delectus quasi
