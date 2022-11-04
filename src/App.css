@@ -557,6 +557,53 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid #fff;
 }
 
+.conteudo-modal {
+  display: flex;
+  flex-direction: column; 
+}
+
+.titulo-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.project-image {
+  display: flex;
+  /* width: 50%; */
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 300px;
+  height: 250px;
+}
+
+.project-info {
+  width: 50%;
+  border-left: 2px solid #C4C4CC;
+  padding-left: 40px;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col li {
+  margin-top: 10px
+}
+
 .mymodal {
   position: fixed;
   top: 50%;
@@ -566,6 +613,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translate(-50%, -50%);
 
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  opacity:  0.9;
   overflow: auto;
   border-radius: 4px;
   outline: none;
@@ -594,9 +642,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .ReactModal__Overlay--before-close {
   opacity: 0;
 }
-
-
-
 
 
 /************ Projects Css ************/
