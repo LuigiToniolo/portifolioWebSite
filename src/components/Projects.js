@@ -1,21 +1,21 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { i18n } from "./MultiLingue/Translate/i18n";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import domvsIt from "../assets/img/site-domvs.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import React, { useState } from "react";
 import Modal from "react-modal";
-import {ModalContent1, ModalContent2, ModalContent3 } from "../components/Modal/index";
-import { data } from "../components/Modal/data";
+import {
+  ModalContent1,
+  ModalContent2,
+  ModalContent3,
+} from "../components/Modal/index";
 
 Modal.setAppElement("#root");
 
 export const Projects = () => {
-
   const [isOpen1, setIsOpen1] = useState(false);
 
   function toggleModal1() {
@@ -75,10 +75,12 @@ export const Projects = () => {
                         <Row>
                           <Col size={12} sm={6} md={4}>
                             <div className="proj-imgbx" onClick={toggleModal1}>
-                              <img src={projImg1} />
+                              <img src={domvsIt} />
                               <div className="proj-txtx">
-                                <h4>{data.modal1.title}</h4>
-                                <span>{data.modal1.subtitle}</span>
+                                <h4>{i18n.t("projects.modal1.title")}</h4>
+                                <span>
+                                  {i18n.t("projects.modal1.subtitle")}
+                                </span>
                               </div>
                             </div>
                           </Col>
@@ -102,8 +104,10 @@ export const Projects = () => {
                             <div className="proj-imgbx" onClick={toggleModal2}>
                               <img src={projImg2} />
                               <div className="proj-txtx">
-                                <h4>{data.modal2.title}</h4>
-                                <span>{data.modal2.subtitle}</span>
+                                <h4>{i18n.t("projects.modal2.title")}</h4>
+                                <span>
+                                  {i18n.t("projects.modal2.subtitle")}
+                                </span>
                               </div>
                             </div>
                           </Col>
@@ -127,8 +131,10 @@ export const Projects = () => {
                             <div className="proj-imgbx" onClick={toggleModal3}>
                               <img src={projImg2} />
                               <div className="proj-txtx">
-                              <h4>{data.modal3.title}</h4>
-                                <span>{data.modal3.subtitle}</span>
+                                <h4>{i18n.t("projects.modal3.title")}</h4>
+                                <span>
+                                  {i18n.t("projects.modal3.subtitle")}
+                                </span>
                               </div>
                             </div>
                           </Col>
@@ -152,11 +158,11 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">
                         <p>
-                          testeLorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          testeLorem ipsum dolor sit amet consectetur
+                          adipisicing elit. Cumque quam, quod neque provident
+                          velit, rem explicabo excepturi id illo molestiae
+                          blanditiis, eligendi dicta officiis asperiores
+                          delectus quasi inventore debitis quo.
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
