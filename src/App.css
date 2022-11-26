@@ -543,8 +543,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Modal Css ************/
 
 .botao-modal {
-  color: #000;
-  border: 1px solid #000;
+  color: #C4C4CC;
+  border: 1px solid #C4C4CC;
   padding: 5px 10px;
   margin-left: 95%;
   transition: all .5s ease;
