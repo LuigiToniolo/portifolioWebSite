@@ -368,8 +368,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-
-
+ 
 .item {
   display: flex;
   flex-direction: column;
@@ -437,10 +436,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media only screen and (max-width: 780px) {
   .single-chart {
     /* margin: 0 50px; */
-    width: 100%;
+    width: 90%;
+  }
+  .skill p {
+    margin: 20px 0;
+    font-size: 16px;
   }
   .skill-slider {
-    width: 100%;
+    width: 80%;
+  }
+  .skill-bx {
+    padding: 0 0 0 0;
+    background: rgba(21, 21, 21, 0.45);
+  }
+  .skill-bx h2 {
+    padding: 20px 0 10px 0;
+  }
+  .react-multiple-carousel__arrow {
+    /* display: none; */
+    margin: 0 -7px;
   }
 }
 
@@ -570,6 +584,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+@media only screen and (max-width: 780px) {
+  .project p {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+  }
+  #pills-tab {
+    width: 100%;
+    height: 150px;
+  }
+  .nav-item {
+    display: 100%;
+  }
+  .project .nav.nav-pills {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    background-color: rgb(255 255 255 / 10%);
+    /* overflow: hidden; */
+  }
+  .project .nav.nav-pills .nav-link::before {
+    background: transparent;
+  }
+  .nav-link#projects-tabs-tab-first {
+    border: 2px solid #fff;
+    border-radius: 0;
+    
+  }
 }
 
 /************ Modal Css ************/
