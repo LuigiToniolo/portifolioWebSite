@@ -236,6 +236,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 2.5%;
 }
 
+@media only screen and (max-width: 780px) {
+  nav.navbar {
+    color: red;
+    z-index: 9999;
+  }
+}
+
 /************ Banner Css ************/
 
 .banner {
@@ -1020,5 +1027,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .newsletter-bx h3 {
     text-align: center;
+  }
+  .footer img {
+    width: 100%;
+    align-item: center; 
+  }
+  .social-icon a {
+    width: 70px;
+    height: 70px;
   }
 }
