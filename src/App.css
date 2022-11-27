@@ -853,6 +853,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+@media only screen and (max-width: 780px) {
+  .contact h2 {
+    text-align: center;
+    margin-top: 4vh;
+  }
+  .contact form button {
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 0;
+  }
+  .contact form button::before {
+    border-radius: 50px;
+  }
+
+}
+
+
 /************ Portifolio Css ************/
 
 .portifolio {
@@ -901,6 +918,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+@media only screen and (max-width: 780px) {
+  .portifolio button {
+    width: 100%;
+    /* padding: 2vh 33vw; */
+  }
+  .portifolio button span {
+    width: 100%;
+    
+  }
+}
 
 
 /************ Footer Css ************/
@@ -987,3 +1014,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: auto;
 }
 
+@media only screen and (max-width: 780px) {
+  .newsletter-bx {
+    padding: 40px 40px;
+  }
+  .newsletter-bx h3 {
+    text-align: center;
+  }
+}
