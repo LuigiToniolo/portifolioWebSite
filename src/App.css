@@ -369,6 +369,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+@media only screen and (max-width: 780px) {
+  nav.navbar {
+    color: red;
+    z-index: 9999;
+  }
+}
+
 /************ Banner Css ************/
 
 .banner {
@@ -1081,6 +1088,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+@media only screen and (max-width: 780px) {
+  .contact h2 {
+    text-align: center;
+    margin-top: 4vh;
+  }
+  .contact form button {
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 0;
+  }
+  .contact form button::before {
+    border-radius: 50px;
+  }
+
+}
+
+
 /************ Portifolio Css ************/
 
 .portifolio {
@@ -1133,6 +1157,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+@media only screen and (max-width: 780px) {
+  .portifolio button {
+    width: 100%;
+    /* padding: 2vh 33vw; */
+  }
+  .portifolio button span {
+    width: 100%;
+    
+  }
+}
 
 
 /************ Footer Css ************/
@@ -1232,6 +1266,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .newsletter-bx h3 {
     text-align: center;
   }
+@media only screen and (max-width: 780px) {
+  .newsletter-bx {
+    padding: 40px 40px;
+  }
+  .newsletter-bx h3 {
+    text-align: center;
+  }
+  .footer img {
+    width: 100%;
+    align-item: center; 
+  }
+  .social-icon a {
+    width: 70px;
+    height: 70px;
+  }
+}
 
   .newsletter-bx {
     width: 100%;
