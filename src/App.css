@@ -241,6 +241,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     color: red;
     z-index: 9999;
   }
+  .social-icon {
+    display: none;
+  }
+  .navbar .navbar-expand-md .navbar-light {
+    background-color: red;
+  }
+  #navId {
+    background-color: #fff;
+  }
 }
 
 /************ Banner Css ************/
