@@ -18,6 +18,7 @@
 }
 
 /************ Default Css ************/
+
 * {
   margin: 0;
   padding: 0;
@@ -369,14 +370,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+
+
 @media only screen and (max-width: 780px) {
   nav.navbar {
     color: red;
     z-index: 9999;
   }
-  .social-icon {
+  
+  .button-hash {
     display: none;
   }
+  
   .navbar .navbar-expand-md .navbar-light {
     background-color: red;
   }
@@ -481,7 +486,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 16px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
+    /* padding: 0 23px; */
   }
 
   .banner img {
@@ -603,6 +609,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
 }
 
+@media only screen and (max-width: 780px) {
+  .subtitle-skill {
+    padding-bottom: 20px;
+  }
+}
+
 
 @media only screen and (max-width: 780px) {
   .single-chart {
@@ -612,8 +624,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .skill p {
     margin: 20px 0;
+    padding: 0 23px;
     font-size: 16px;
-    text-align: left;
+    text-align: center;
   }
 
   .skill-slider {
@@ -788,7 +801,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 16px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
   }
 
   #pills-tab {

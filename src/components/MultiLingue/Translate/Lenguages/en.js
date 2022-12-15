@@ -4,7 +4,8 @@ const messages = {
             navbar: {
                 home: 'Home',
                 skill: 'About Me',
-                projects: 'Projects'
+                projects: 'Projects',
+                contact: 'Contact'
             },
             footer: {
                 copy: 'Copyright 2022. All Rights Reserved.',

@@ -74,7 +74,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>{i18n.t('skills.title')}</h2>
-                        <p>{i18n.t('skills.subtitle')}</p>
+                        <p className='subtitle-skill'>{i18n.t('skills.subtitle')}</p>
 
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
 

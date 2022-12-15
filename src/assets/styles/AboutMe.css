@@ -70,9 +70,23 @@
     word-wrap: break-word;
 }
 
+@media only screen and (max-width: 780px) {
+    #history {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .education {
     align-items: flex-start;
     width: 50%;
+}
+
+@media only screen and (max-width: 780px) {
+    .education {
+        align-items: center;
+        width: 100%;
+    }
 }
 
 .cardContent {
@@ -94,6 +108,16 @@
     padding: 2px 15px;
 }
 
+/* @media only screen and (max-width: 780px) {
+    
+.read-more-less--more,
+.read-more-less--less {
+    padding: 20px 25px;
+    margin-top: 35px;
+}
+
+} */
+
 .read-more-less--more:hover,
 .read-more-less--less:hover {
     color: #7C7C8A;
@@ -107,6 +131,19 @@
     justify-content: center;
     width: 50%;
     margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 780px) {
+    .personalSkills {
+        width: 100%;
+        margin-top: 5vh;
+    }
+    .historyTitle {
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
 
