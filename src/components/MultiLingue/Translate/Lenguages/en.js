@@ -25,6 +25,7 @@ const messages = {
             projects: {
                 title: "Projects",
                 subtitle: "Here are all my projects, both personal and professional. In my personal projects, I can say that they were all developed 100% by me; As for my professionals, I was part of a development team at companies. As a programmer, I really like to update myself and seek to know more and more about the most up-to-date technologies on the market to add to my work and my personal development. Here I can show some of them..",
+                personal: "Click here to see my personal projects",
                 modal1: {
                     title: "Single Page Aplication React Js",
                     subtitle: "Web Developer",
@@ -53,6 +54,21 @@ const messages = {
                       four: "Elementor",
                       five: "PhotoShop",
                       six: "Google & Facebook Ads"
+                    }
+                  },
+                  modal3: {
+                    title: "React Landing Page",
+                    subtitle: "Web Developer",
+                    titleContent: "Product Landing Page.",
+                    content: "The main objective of this project was to develop a landing page to serve as a showcase for a product of the company I currently work with called DDC: an authorial methodology by Domvs iT. The technologies used in this project were React.Js, HTML, SCSS and JavaScript. Through them, I was able to develop a flawless and fully responsive platform. The team for this project was not that big, it only had one developer (me), one UI/UX Designer and one PO. Also, I would like to congratulate the Designer of this project, Felipe Ribeiro, who did a great job developing the prototype through Figma.",
+                    techTitle: "Technologies used",
+                    techList: {
+                        one: "React Js",
+                        two: "Html / CSS",
+                        three: "JavaScript",
+                        four: "AWS deploy",
+                        five: "Figma",
+                        six: "Jira (Scrum)"
                     }
                   },
             },

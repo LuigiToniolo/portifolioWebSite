@@ -25,6 +25,7 @@ const messages = {
             projects: {
                 title: "Projetos",
                 subtitle: "Aqui estão todos os meus projetos, tanto os pessoais, quanto os profissionais. Nos meus projetos pessoais, posso dizer que foram todos desenvolvidos 100% por mim; já para os meus profissionais, eu fiz parte de um time de desenvolvimento nas empresas. Eu, como programador, gosto muito de me atualizar e procurar saber cada vez mais das tecnologias mais atualizadas do mercado para agregar em meu trabalho e em meu desenvolvimento pessoal. Aqui posso mostrar algumas delas..",
+                personal: "Clique aqui e veja meus projetos pessoais",
                 modal1: {
                     title: "Single Page Aplication React Js",
                     subtitle: "Web Developer",
@@ -56,18 +57,18 @@ const messages = {
                     }
                   },
                   modal3: {
-                    title: "E-commerce WordPress",
-                    subtitle: "Project Manager",
-                    titleContent: "Toniolo Joias Web Site",
-                    content: "Eu desenvolvi e liderei um projeto inteiro para essa empresa. O projeto consistia em desenvolver do zero um e-commerce de joias usando o WordPress e Woocommerce (Plugin). Como foi realizado em WordPress, foi usado muito, para o desenvolvimento desse e-commerce, todo meu conhecimento de HTML5 e CSS3 e até mesmo SCSS.  Além disso, o site inteiro foi otimizado para Search Engine Optimization (SEO). Após o término do desenvolvimento desse projeto, nós decidimos investir em ads como as propagandas do google e facebook para aumentar a visualização do nosso site. Com isso, nós atingimos mais de R$10k em vendas num período menor que 1 mês. Além de investir no tráfego pago, nós investimos também no tráfego orgânico, como dito anteriormente, melhorando o SEO de todo website.",
+                    title: "Landing Page - React",
+                    subtitle: "Web Developer",
+                    titleContent: "Landing Page de um produto.",
+                    content: "O objetivo principal desse projeto era desenvolver uma landing page para servir de vitrine de um produto da empresa que trabalho atualmente chamado DDC: uma metodologia autoral da Domvs iT. As tecnologias usadas neste projeto foram o React.Js, HTML, SCSS e JavaScript. Por meio delas, fui capaz de desenvolver uma plataforma impecável e totalmente responsiva. O time desse projeto não foi tão grande, possuía apenas um desenvolvedor (eu), um Designer UI/UX e um PO. Além disso, gostaria de parabenizar o Designer desse projeto, o Felipe Ribeiro, que fez um ótimo trabalho de desenvolvimento do protótipo por meio do Figma.",
                     techTitle: "Tecnologias usadas",
                     techList: {
-                      one: "WordPress",
-                      two: "Html / CSS",
-                      three: "WooCommerce",
-                      four: "Elementor",
-                      five: "PhotoShop",
-                      six: "Google & Facebook Ads"
+                        one: "React Js",
+                        two: "Html / CSS",
+                        three: "JavaScript",
+                        four: "AWS deploy",
+                        five: "Figma",
+                        six: "Jira (Scrum)"
                     }
                   },
             },

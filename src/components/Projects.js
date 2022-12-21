@@ -1,7 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { i18n } from "./MultiLingue/Translate/i18n";
+import github from '../assets/img/github-mark-white.png';
 import Toniolo from "../assets/img/tonioloJoiasCapa.png";
 import domvsIt from "../assets/img/domvsIT.png";
+import lpddc from "../assets/img/lp-ddc-nova.png";
 import PHP from "../assets/img/PHP.png";
 import REACT from "../assets/img/ReactJs.png";
 import SCRUM from "../assets/img/Scrum.png";
@@ -166,6 +168,7 @@ export const Projects = () => {
                             </button>
                             <ModalContent1 />
                           </Modal>
+
                           <Col size={12} sm={6} md={4}>
                             <div className="proj-imgbx" onClick={toggleModal2}>
                               <img src={Toniolo} />
@@ -193,9 +196,9 @@ export const Projects = () => {
                             </button>
                             <ModalContent2 />
                           </Modal>
-                          {/* <Col size={12} sm={6} md={4}>
+                          <Col size={12} sm={6} md={4}>
                             <div className="proj-imgbx" onClick={toggleModal3}>
-                              <img src={projImg2} />
+                              <img src={lpddc} />
                               <div className="proj-txtx">
                                 <h4>{i18n.t("projects.modal3.title")}</h4>
                                 <span>
@@ -219,10 +222,16 @@ export const Projects = () => {
                               X
                             </button>
                             <ModalContent3 />
-                          </Modal> */}
+                          </Modal>
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
+                        <div className="personal-project">
+                          <a target="blank" href="https://github.com/LuigiToniolo">
+                            <span>{i18n.t("projects.personal")}</span>
+                            <img src={github} alt="github icon" className="project-icon" />
+                          </a>
+                        </div>
                         {/* <Row>
                           <Col size={12} sm={6} md={4}>
                             <div className="proj-imgbx" onClick={toggleModal1}>

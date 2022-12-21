@@ -2,6 +2,7 @@ import React from "react";
 import "./modal.css";
 import imacDomvs from "../../assets/img/imacDomvs.png";
 import imacToniolo from "../../assets/img/imacToniolo.png";
+import imaclpddc from "../../assets/img/lp-ddc-imac.png";
 
 import PHP from "../../assets/img/PHP.png";
 import REACT from "../../assets/img/ReactJs.png";
@@ -90,7 +91,7 @@ export const ModalContent3 = () => {
       <div className="project-content">
 
         <div className="project-image">
-        <img src={imacDomvs} />
+        <img src={imaclpddc} />
         </div>
 
         <div className="project-info">

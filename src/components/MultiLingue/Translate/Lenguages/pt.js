@@ -25,6 +25,7 @@ const messages = {
             projects: {
                 title: "Projetos",
                 subtitle: "Aqui estão todos os meus projetos, tanto pessoais como profissionais. Nos meus projetos pessoais, posso dizer que foram todos desenvolvidos a 100% por mim; para os meus profissionais, fiz parte de uma equipa de desenvolvimento em empresas. Eu, como programador, adoro atualizar-me e procurar conhecer cada vez mais as tecnologias mais atualizadas do mercado para acrescentar ao meu trabalho e ao meu desenvolvimento pessoal. Aqui posso mostrar-lhe alguns deles.",
+                personal: "Clique aqui e veja meus projetos pessoais",
                 modal1: {
                     title: "Single Page Aplication React Js",
                     subtitle: "Web Developer",
@@ -53,6 +54,21 @@ const messages = {
                       four: "Elementor",
                       five: "PhotoShop",
                       six: "Google & Facebook Ads"
+                    }
+                  },
+                  modal3: {
+                    title: "Landing Page React",
+                    subtitle: "Web Developer",
+                    titleContent: "Landing Page de um produto.",
+                    content: "O objetivo principal desse projeto era desenvolver uma landing page para servir de vitrine de um produto da empresa que trabalho atualmente chamado DDC: uma metodologia autoral da Domvs iT. As tecnologias usadas neste projeto foram o React.Js, HTML, SCSS e JavaScript. Por meio delas, fui capaz de desenvolver uma plataforma impecável e totalmente responsiva. O time desse projeto não foi tão grande, possuía apenas um desenvolvedor (eu), um Designer UI/UX e um PO. Além disso, gostaria de parabenizar o Designer desse projeto, o Felipe Ribeiro, que fez um ótimo trabalho de desenvolvimento do protótipo por meio do Figma.",
+                    techTitle: "Tecnologias usadas",
+                    techList: {
+                        one: "React Js",
+                        two: "Html / CSS",
+                        three: "JavaScript",
+                        four: "AWS deploy",
+                        five: "Figma",
+                        six: "Jira (Scrum)"
                     }
                   },
             },
