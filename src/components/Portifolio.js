@@ -1,6 +1,29 @@
 import { Col, Row } from "react-bootstrap";
 import { i18n } from "./MultiLingue/Translate/i18n";
 
+// function upload(e) {
+//   console.log(e);
+//   const url = "https://9lr9dg69ec.execute-api.us-east-1.amazonaws.com/sample/uploadFunction";
+//   fetch(url, {
+//     method: "POST",
+//     mode: "cors",
+//     body: JSON.stringify({ key: "teste" }),
+//   })
+//     .then((res) => res.json())
+//     .then((res) => {
+//       console.log(res);
+//       // Agora vamos lançar o arquivo para a url da aws lambda:
+//       fetch(res.URL, {
+//         method: "PUT",
+//         mode: "cors",
+//         body: e.target.files[0],
+//       })
+//         .then((res) => console.log(res))
+//         .catch((err) => console.log(err));
+//     })
+//     .catch((err) => console.log(err));
+// }
+
 export const Portifolio = () => {
   return (
     <Col lg={12}>
@@ -26,6 +49,7 @@ export const Portifolio = () => {
                 >
                   <span>{i18n.t('portifolio.button')}</span>
                 </button>
+                {/* <input type="file" onChange={upload}/> */}
               </a>
             </div>
 
