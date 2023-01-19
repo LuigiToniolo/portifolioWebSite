@@ -15,7 +15,7 @@ const messages = {
                 portifolio: 'Bem vindo(a) a meu site!',
                 title1: "Olá! Sou Luigi,",
                 title2: "Web Developer!",
-                descricao: "Tenho três anos de experiência como Desenvolvedor Frontal, com muito contacto com plataformas de desenvolvimento, tenho uma boa qualidade de código normalmente usando React.Js, Angular.Js, Flutter, MySQL. Nos projetos em que trabalho, uso sempre figma, Jira e Git. Além disso, ajudo as empresas a criar e manter uma melhor base de código para reutilização, componenteando todas as secções do site.",
+                descricao: "Tenho mais de quatro anos de experiência como desenvolvedor front-end com forte experiência em React Js, Html e Css, sempre lembrando boas práticas com boa qualidade de código. Como mencionado, eu costumo trabalhar com o framework React.Js e sempre sendo auxiliado pelas metodologias ágeis de desenvolvimento. Com isso eu ajudo as empresas criarem e manter uma boa base de código para reutilização, componentizando todas as seções da aplicação",
                 connect: 'Fala comigo!',
             },
             skills: {
@@ -91,7 +91,7 @@ const messages = {
                     title: "React Js",
                     subtitle: "Ganchos, integração com API's, SPA, componentes de função, uso de libs, etc..",
                     titleContent: "Formação no Framework React Js",
-                    content: "Reagir é uma das bibliotecas de programação de sites mais utilizadas hoje em dia. Sendo livre e bastante completo, conquistou o mercado e os seus desenvolvedores, tendo uma comunidade vibrante e uma rápida evolução nos últimos anos. Nesta formação, aprendemos muito com a reação como a integração do Repouso da API, a comunicação back-end e a base de dados. Além disso, aprendi a componentesizar a aplicação para melhorar a organização e também para utilizar as libs disponíveis.",
+                    content: "React é uma das bibliotecas de programação de sites mais utilizadas hoje em dia. Sendo livre e bastante completo, conquistou o mercado e os seus desenvolvedores, tendo uma comunidade vibrante e uma rápida evolução nos últimos anos. Nesta formação, aprendemos muito com a reação como a integração do Repouso da API, a comunicação back-end e a base de dados. Além disso, aprendi a componentesizar a aplicação para melhorar a organização e também para utilizar as libs disponíveis.",
                     certificateTitle: "Cursos Concluídos:",
                     courseList: {
                         one: "React - abstraindo seu css com styled components",

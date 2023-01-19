@@ -15,7 +15,7 @@ const messages = {
                 portifolio: 'Bem vindo(a) a meu site!',
                 title1: "Olá! Sou o Luigi,",
                 title2: "Web Developer!",
-                descricao: "Tenho três anos de experiência como Desenvolvedor Front-End, com muito contato com plataformas de desenvolvimento, tenho uma boa qualidade de código normalmente utilizando React.Js, Angular.Js, Flutter, MySQL. Nos projetos que atuo, sempre utilizo o figma, Jira e Git. Além disso, ajudo empresas a criar e manter uma base de código melhor para reutilização, componentizando todas as seções do site.",
+                descricao: "Tenho mais de quatro anos de experiência como desenvolvedor front-end com forte experiência em React Js, Html e Css, sempre lembrando boas práticas com boa qualidade de código. Como mencionado, eu costumo trabalhar com o framework React.Js e sempre sendo auxiliado pelas metodologias ágeis de desenvolvimento. Com isso eu ajudo as empresas criarem e manter uma boa base de código para reutilização, componentizando todas as seções da aplicação",
                 connect: 'Fale comigo!',
             },
             skills: {
