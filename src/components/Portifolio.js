@@ -1,17 +1,15 @@
 import { Col, Row } from "react-bootstrap";
-// import React ,{useState} from 'react';
 import { i18n } from "./MultiLingue/Translate/i18n";
 // import AWS from 'aws-sdk'
 
 function upload(e) {
-  
   console.log(e);
   const url =
-    "https://5izqevu958.execute-api.sa-east-1.amazonaws.com/sample/uploadFile";
+    "https://5uy0zn1mdk.execute-api.us-east-1.amazonaws.com/sample/sampleuploadfunction";
   fetch(url, {
     method: "POST",
     mode: "cors",
-    body: JSON.stringify({ key: "curriculum_luigi.pdf" }),
+    body: JSON.stringify({ key: "teste" }),
   })
     .then((res) => res.json())
     .then((res) => {
@@ -30,45 +28,9 @@ function upload(e) {
     .catch((err) => console.log(err));
 }
 
-// const S3_BUCKET = "luigitoniolo.com";
-// const REGION ="us-east-1";
-
-// AWS.config.update({
-//   accessKeyId: 'AKIAXXHH7R6HWS4R5VM6',
-//   secretAccessKey: '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'
-// })
-
-// const myBucket = new AWS.S3({
-//   params: { Bucket: S3_BUCKET},
-//   region: REGION,
-// })
-
 export const Portifolio = () => {
 
-  //   const [progress , setProgress] = useState(0);
-  //   const [selectedFile, setSelectedFile] = useState(null);
 
-  //   const handleFileInput = (e) => {
-  //       setSelectedFile(e.target.files[0]);
-  //   }
-
-  //   const uploadFile = (file) => {
-
-  //       const params = {
-  //           ACL: 'public-read',
-  //           Body: file,
-  //           Bucket: S3_BUCKET,
-  //           Key: file.name
-  //       };
-
-  //       myBucket.putObject(params)
-  //           .on('httpUploadProgress', (evt) => {
-  //               setProgress(Math.round((evt.loaded / evt.total) * 100))
-  //           })
-  //           .send((err) => {
-  //               if (err) console.log(err)
-  //           })
-  //   };
 
   return (
     <Col lg={12}>
