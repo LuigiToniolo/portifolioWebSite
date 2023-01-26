@@ -49,12 +49,23 @@ async function download() {
     .catch((err) => console.log(err));
 }
 
+// const [block, setBlock] = useState(false);
+
+// const blockPanel = () => {
+//   setBlock(true);
+// };
+
+// const unblockPanel = () => {
+//   setBlock(false);
+// }
+
 
 export const Portifolio = () => {
 
 
 
   return (
+
     <Col lg={12}>
       <div className="newsletter-bx wow slideInUp">
         <Row>
