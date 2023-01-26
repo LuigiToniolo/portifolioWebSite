@@ -28,6 +28,28 @@ function upload(e) {
     .catch((err) => console.log(err));
 }
 
+async function download() {
+  const url =
+    "https://3kv2y7dmj7.execute-api.us-east-1.amazonaws.com/default/sampleDownloadFunction";
+  fetch(url, {
+    method: "POST",
+    mode: "cors",
+    body: JSON.stringify({ key: "Luigi_Toniolo_Resume.pdf" }),
+  })
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      fetch(res.URL, {
+        method: "GET",
+        mode: "cors",
+      })
+        .then((res) => window.open(res.url, "_blank"))
+        .catch((err) => console.log(err));
+    })
+    .catch((err) => console.log(err));
+}
+
+
 export const Portifolio = () => {
 
 
@@ -46,23 +68,11 @@ export const Portifolio = () => {
 
           <Col md={6} xl={7}>
             <div class="portifolio">
-              <a
-                href="Luigi_Toniolo_Resume.pdf"
-                download="Luigi Toniolo Resume.pdf"
-              >
-                <button
-                  type="submit"
-                  href="Luigi_Toniolo_Resume.pdf"
-                  download="Luigi Toniolo Resume.pdf"
-                >
+              <a>
+                <button onClick={download}>
                   <span>{i18n.t("portifolio.button")}</span>
                 </button>
-                {/* <div>Native SDK File Upload Progress is {progress}%</div> */}
                 <input type="file" onChange={upload} />
-                {/* <button onClick={() => uploadFile(selectedFile)}>
-                  {" "}
-                  Upload to S3
-                </button> */}
               </a>
             </div>
           </Col>
