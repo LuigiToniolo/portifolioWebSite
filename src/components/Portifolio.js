@@ -83,7 +83,7 @@ export const Portifolio = () => {
                 <button onClick={download}>
                   <span>{i18n.t("portifolio.button")}</span>
                 </button>
-                <input type="file" onChange={upload} />
+                {/* <input type="file" onChange={upload} /> */}
               </a>
             </div>
           </Col>
