@@ -4,6 +4,7 @@ import github from '../assets/img/github-mark-white.png';
 import Toniolo from "../assets/img/tonioloJoiasCapa.png";
 import domvsIt from "../assets/img/domvsIT.png";
 import lpddc from "../assets/img/lp-ddc-nova.png";
+import ajudai from "../assets/img/ajudai.png";
 import PHP from "../assets/img/PHP.png";
 import REACT from "../assets/img/ReactJs.png";
 import SCRUM from "../assets/img/Scrum.png";
@@ -22,6 +23,7 @@ import {
   ModalContent1,
   ModalContent2,
   ModalContent3,
+  ModalContent4,
   ModalCertificate1,
   ModalCertificate2,
   ModalCertificate3,
@@ -100,6 +102,11 @@ export const Projects = () => {
 
   function toggleModal12() {
     setIsOpen12(!isOpen12);
+  }
+  const [isOpen13, setIsOpen13] = useState(false);
+
+  function toggleModal13() {
+    setIsOpen13(!isOpen13);
   }
 
   return (
@@ -196,6 +203,7 @@ export const Projects = () => {
                             </button>
                             <ModalContent2 />
                           </Modal>
+
                           <Col size={12} sm={6} md={4}>
                             <div className="proj-imgbx" onClick={toggleModal3}>
                               <img src={lpddc} />
@@ -223,7 +231,36 @@ export const Projects = () => {
                             </button>
                             <ModalContent3 />
                           </Modal>
+
+                          <Col size={12} sm={6} md={4}>
+                            <div className="proj-imgbx" onClick={toggleModal13}>
+                              <img src={ajudai} />
+                              <div className="proj-txtx">
+                                <h4>{i18n.t("projects.modal4.title")}</h4>
+                                <span>
+                                  {i18n.t("projects.modal4.subtitle")}
+                                </span>
+                              </div>
+                            </div>
+                          </Col>
+                          <Modal
+                            isOpen={isOpen13}
+                            onRequestClose={toggleModal13}
+                            contentLabel="My dialog"
+                            className="mymodal"
+                            overlayClassName="myoverlay"
+                            closeTimeoutMS={500}
+                          >
+                            <button
+                              className="botao-modal"
+                              onClick={toggleModal13}
+                            >
+                              X
+                            </button>
+                            <ModalContent4 />
+                          </Modal>
                         </Row>
+                        
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <div className="personal-project">
@@ -232,62 +269,6 @@ export const Projects = () => {
                             <img src={github} alt="github icon" className="project-icon" />
                           </a>
                         </div>
-                        {/* <Row>
-                          <Col size={12} sm={6} md={4}>
-                            <div className="proj-imgbx" onClick={toggleModal1}>
-                              <img src={domvsIt} />
-                              <div className="proj-txtx">
-                                <h4>{i18n.t("projects.modal1.title")}</h4>
-                                <span>
-                                  {i18n.t("projects.modal1.subtitle")}
-                                </span>
-                              </div>
-                            </div>
-                          </Col>
-                          <Modal
-                            isOpen={isOpen1}
-                            onRequestClose={toggleModal1}
-                            contentLabel="My dialog"
-                            className="mymodal"
-                            overlayClassName="myoverlay"
-                            closeTimeoutMS={500}
-                          >
-                            <button
-                              className="botao-modal"
-                              onClick={toggleModal1}
-                            >
-                              X
-                            </button>
-                            <ModalContent1 />
-                          </Modal>
-                          <Col size={12} sm={6} md={4}>
-                            <div className="proj-imgbx" onClick={toggleModal2}>
-                              <img src={Toniolo} />
-                              <div className="proj-txtx">
-                                <h4>{i18n.t("projects.modal2.title")}</h4>
-                                <span>
-                                  {i18n.t("projects.modal2.subtitle")}
-                                </span>
-                              </div>
-                            </div>
-                          </Col>
-                          <Modal
-                            isOpen={isOpen2}
-                            onRequestClose={toggleModal2}
-                            contentLabel="My dialog"
-                            className="mymodal"
-                            overlayClassName="myoverlay"
-                            closeTimeoutMS={500}
-                          >
-                            <button
-                              className="botao-modal"
-                              onClick={toggleModal2}
-                            >
-                              X
-                            </button>
-                            <ModalContent2 />
-                          </Modal>
-                        </Row> */}
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>

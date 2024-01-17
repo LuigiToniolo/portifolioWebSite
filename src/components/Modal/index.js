@@ -3,6 +3,7 @@ import "./modal.css";
 import imacDomvs from "../../assets/img/imacDomvs.png";
 import imacToniolo from "../../assets/img/imacToniolo.png";
 import imaclpddc from "../../assets/img/lp-ddc-imac.png";
+import ajudai_imac from "../../assets/img/ajudai-imac.png";
 
 import PHP from "../../assets/img/PHP.png";
 import REACT from "../../assets/img/ReactJs.png";
@@ -110,6 +111,45 @@ export const ModalContent3 = () => {
             <ul className="col">
               <li>{i18n.t("projects.modal3.techList.three")}</li>
               <li>{i18n.t("projects.modal3.techList.six")}</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  );
+};
+
+export const ModalContent4 = () => {
+  return (
+    <div className="conteudo-modal">
+      <h2 className="titulo-modal">{i18n.t("projects.modal4.title")}</h2>
+      <div className="project-content">
+
+        <div className="project-image">
+        <img src={ajudai_imac} />
+        </div>
+
+        <div className="project-info">
+          <h3>{i18n.t("projects.modal4.titleContent")}</h3>
+          <p>{i18n.t("projects.modal4.content")}</p>
+          <div className="links">
+            <a className="link-projeto" href="https://ajudai.io/" target="_blank">{i18n.t("projects.modal4.link1")}</a>
+            <a className="link-projeto" href="https://areadocliente.ajudai.io/" target="_blank">{i18n.t("projects.modal4.link2")}</a>
+          </div>
+          <h4>{i18n.t("projects.modal4.techTitle")}</h4>
+          <div className="tech-list">
+            <ul className="col">
+              <li>{i18n.t("projects.modal4.techList.one")}</li>
+              <li>{i18n.t("projects.modal4.techList.four")}</li>
+            </ul>
+            <ul className="col">
+              <li>{i18n.t("projects.modal4.techList.two")}</li>
+              <li>{i18n.t("projects.modal4.techList.five")}</li>
+            </ul>
+            <ul className="col">
+              <li>{i18n.t("projects.modal4.techList.three")}</li>
+              <li>{i18n.t("projects.modal4.techList.six")}</li>
             </ul>
           </div>
         </div>

@@ -50,6 +50,23 @@ export function Perfil () {
 
                         <div className='personalSkills'>
                             <h3 className='historyTitle'>{i18n.t('personalSkills1.historyTitle')}</h3>
+
+                            <div className='cardContent'>
+                                <h4 class="text-">{i18n.t('personalSkills3.title')}</h4>
+                                <p class="mb-2">{i18n.t('personalSkills3.subtitle')}</p>
+                                <div className='textContent'>
+                                <ReactReadMoreReadLess
+                                        charLimit={250}
+                                        readMoreText={i18n.t('personalSkills1.readMore')}
+                                        readLessText={i18n.t('personalSkills1.readLess')}
+                                        readMoreClassName="read-more-less--more"
+                                        readLessClassName="read-more-less--less"
+                                    >
+                                        {i18n.t('personalSkills3.content')}
+                                    </ReactReadMoreReadLess>
+                                </div>
+                            </div>
+
                             <div className='cardContent'>
                                 <h4 class="text-">{i18n.t('personalSkills1.title')}</h4>
                                 <p class="mb-2">{i18n.t('personalSkills1.subtitle')}</p>
@@ -82,13 +99,12 @@ export function Perfil () {
                                     </ReactReadMoreReadLess>
                                 </div>
                             </div>
+
                         </div>
 
                     </Container>
                 )}
                 </TrackVisibility>
-
-
 
                 <div className='rodape'>
                     <FooterPages/>

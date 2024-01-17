@@ -8,19 +8,19 @@ const messages = {
                 contact: 'Contact'
             },
             footer: {
-                copy: 'Copyright 2022. All Rights Reserved.',
+                copy: 'Copyright 2024. All Rights Reserved.',
                 develop: 'Website developed by Luigi Toniolo.'
             },
             banner: {
                 portifolio: 'Welcome to my portifolio!',
                 title1: "Hi! I'm Luigi,",
                 title2: "Web Developer!",
-                descricao: "Three years experience Front-End Developer with strong contact with develop platforms with good code quality usually using React.Js, Angular.Js, Flutter, MySQL, always using figma prototype, Jira and Git. In addition, I help companies create and maintain a better code base for reusability, componentizing all sections of the website.",
+                descricao: 'Welcome to my portfolio! I am an Electrical Engineering student and Web Developer with over 4 years of experience. My expertise includes Python, JavaScript, HTML, CSS, SQL, Django, React.JS, MySQL, and Git. I follow the agile Scrum methodology and excel in creating analytical dashboards and data automation, complementing my versatile profile. Explore my portfolio to learn more about my journey and projects. I am available for questions or collaborations. Thank you for visiting!',
                 connect: 'Let’s Connect ',
             },
             skills: {
                 title: 'Skills',
-                subtitle: "Those are some of my skills that I worked on in all my programs as a web developer. Here they are included as both front-end and back-end languages. Also, I have experience in mobile development!"
+                subtitle: "My expertise spans both front-end and back-end languages, including experience in mobile development. I also excel in creating analytical dashboards, providing a strategic view to projects. Furthermore, I have a solid experience with Excel and excel in creating spreadsheets that enhance efficiency and data analysis."
             },
             projects: {
                 title: "Projects",
@@ -71,6 +71,24 @@ const messages = {
                         six: "Jira (Scrum)"
                     }
                   },
+                  modal4: {
+                    title: "Humanized Chatbot - Python",
+                    subtitle: "CEO at Ajudai Startup",
+                    titleContent: "Ajudai Humanized Chatbot",
+                    content: "This project represents the development of a startup founded by me and two other partners. Acting as the CEO, I have full involvement in various areas, from marketing strategies to programming the functional logic of the Chatbot. The initiative includes an informative landing page, presenting the solution's proposal, and a client area that enables the creation, editing, and monitoring of Chatbots for automatic WhatsApp assistance (currently). The platform was built with Django and Python, utilizing PostgreSQL as the database. We chose to deploy the application on the Render platform due to the presence of WebSocket technology and its affordable service cost. We implemented OpenAI's response technology, specifically the GPT-3.5-turbo natural language model, to provide more human-like responses to the client. This project exemplifies the integration of various technologies to offer an innovative and efficient solution to our clients.",
+                    techTitle: "Technologies used",
+                    link1: "Landing Page",
+                    link2: "Client Area",
+                    techList: {
+                        one: "Django",
+                        two: "Python",
+                        three: "Open AI",
+                        four: "API Consumption",
+                        five: "Figma",
+                        six: "WhatsApp API"
+                    }
+                },
+                
             },
             certificate: {
                 modal1: {
@@ -213,12 +231,12 @@ const messages = {
             aboutme: {
                 title: "I'm Luigi Toniolo",
                 subtitle1: 'Web developer',
-                subtitle: "My name is Luigi Toniolo, I’m Brazilian and Italian citizen. I'm majoring in electrical engineering at the Federal University of São Carlos (UFSCar) located in São Paulo State, Brazil. In addition to studying engineering, I am a web developer with great knowledge in front-end programming. With that, in my current job, I was inserted into several projects that use some of the most famous frameworks like React Js, React Native, Angular, Flutter and WordPress. The latter, I have a high level of understanding of how it works, and, in addition to mastering this platform, I have complete mastery of some plugins such as woocommerce, elementor, etc. In addition to the frameworks used to develop my projects, I have a high level of knowledge in the following programming languages: JavaScript, Git, Html, CSS, Typescript, Dart, Python and C++. I also find it very easy to follow design prototypes (UI/UX) like the figma platform. Because I did a student exchange program in 2016 to Italy, I consider myself to have an advanced knowledge of the English language and a basic proficiency of italian one.",
+                subtitle: "My name is Luigi Toniolo, I am a Brazilian and Italian citizen. I am a student of Electrical Engineering at UFSCar and have accumulated over 4 years of experience as a Web Developer. I take pride in offering not only a solid academic background but also rich practical expertise in various areas of software development. My programming journey encompasses a variety of languages, including Python, JavaScript, HTML, CSS, and SQL. Additionally, I am proficiently versed in technologies such as Django, React.JS, MySQL, Git, and Figma, using the agile Scrum methodology to optimize project development. My skills extend beyond code, highlighted by proficiency in Excel spreadsheets, data automation, and the creation of analytical dashboards, providing a strategic vision to projects with the expected efficiency of tools like Power BI."
             },
             education: {
                 historyTitle: 'My Education',
                 title: 'Graduating in Electrical Engineering',
-                subtitle: 'Federal University of São Carlos / 2019 - Current',
+                subtitle: 'Federal University of São Carlos / 2019 - 2025',
                 content: 'I am currently studying at the Federal University of São Carlos (UFSCar) in the electrical engineering course. I participated in some extension projects like Baja and Formula and this added a lot to my professional development.'
             },
             personalSkills1: {
@@ -233,6 +251,11 @@ const messages = {
                 title: 'Project Manager',
                 subtitle: 'Toniolo Joias / Jun 2020 - Feb 2021',
                 content: 'I developed and led an entire project for this company. The project consisted of developing a jewelry e-commerce from scratch using WordPress and Woocommerce (Plugin). As it was done in WordPress, it was used a lot, for the development of this e-commerce, all my knowledge of HTML5 and CSS3 and even SCSS. Furthermore, the entire website has been optimized for Search Engine Optimization (SEO). After finishing the development of this project, we decided to invest in ads such as google and facebook advertisements to increase the visualization of our site. With that, we reached more than R$10k in sales in a period of less than 1 month. In addition to investing in paid traffic, we also invest in organic traffic, as previously mentioned, improving the SEO of the entire website.'
+            },
+            personalSkills3: {
+                title: 'Wordpress developer',
+                subtitle: 'Aché Laboratórios / Mai 2023 - Atual',
+                content: 'I am responsible for the company s website CMS using Wordpress. I work with a full team of developers and we are developing a complex project for Aché laboratories.'
             }
         }
     }

@@ -8,19 +8,19 @@ const messages = {
                 contact: 'Contato'
             },
             footer: {
-                copy: 'Copyright 2022. Todos os direitos resevados.',
+                copy: 'Copyright 2024. Todos os direitos resevados.',
                 develop: 'Plataforma desenvolvida por Luigi Toniolo.'
             },
             banner:{
                 portifolio: 'Bem vindo(a) a meu site!',
                 title1: "Olá! Sou Luigi,",
                 title2: "Web Developer!",
-                descricao: "Tenho três anos de experiência como Desenvolvedor Frontal, com muito contacto com plataformas de desenvolvimento, tenho uma boa qualidade de código normalmente usando React.Js, Angular.Js, Flutter, MySQL. Nos projetos em que trabalho, uso sempre figma, Jira e Git. Além disso, ajudo as empresas a criar e manter uma melhor base de código para reutilização, componenteando todas as secções do site.",
+                descricao: 'Bem-vindo ao meu portefólio! Sou estudante de Engenharia Elétrica e Desenvolvedor Web com mais de 4 anos de experiência. A minha experiência abrange Python, JavaScript, HTML, CSS, SQL, Django, React.JS, MySQL e Git. Sigo a metodologia ágil Scrum e destaco-me na criação de dashboards analíticos e automação de dados, complementando o meu perfil versátil. Explore o meu portefólio para conhecer mais sobre a minha trajetória e projetos. Estou disponível para dúvidas ou colaborações. Obrigado pela visita!',
                 connect: 'Fala comigo!',
             },
             skills: {
                 title: 'Competências',
-                subtitle: "Estas são algumas das minhas competências que trabalhei em todos os meus projetos como programador. Aqui estão inseridas tanto as línguas frontais como as traseiras. Além disso, tenho experiência em desenvolvimento móvel!"
+                subtitle: "A minha experiência abrange linguagens tanto de front-end como de back-end, incluindo experiência no desenvolvimento mobile. Destaco-me também na criação de dashboards analíticos, proporcionando uma visão estratégica aos projetos. Para além disso, tenho uma sólida experiência com Excel e destaco-me na criação de folhas de cálculo que potencializam a eficiência e a análise de dados.",
             },
             projects: {
                 title: "Projetos",
@@ -71,6 +71,24 @@ const messages = {
                         six: "Jira (Scrum)"
                     }
                   },
+                  modal4: {
+                    title: "Chatbot Humanizado - Python",
+                    subtitle: "CEO na Startup Ajudai",
+                    titleContent: "Chatbot Humanizado Ajudai",
+                    content: "Este projeto representa o desenvolvimento de uma startup fundada por mim e outros dois sócios. Como CEO, tenho uma participação abrangente em várias áreas, desde estratégias de marketing até a programação da lógica funcional do Chatbot. A iniciativa inclui uma página de destino informativa, apresentando a proposta da solução, e uma área do cliente que possibilita a criação, edição e monitorização de Chatbots para atendimento automático no WhatsApp (atualmente). A plataforma foi concebida com Django e Python, utilizando PostgreSQL como banco de dados. Optámos por implementar a aplicação na plataforma Render devido à presença da tecnologia WebSocket e também devido ao seu custo de serviço acessível. Implementámos a tecnologia de resposta da OpenAI, nomeadamente o modelo de linguagem natural GPT-3.5-turbo, para fornecer respostas mais humanizadas ao cliente. Este projeto exemplifica a integração de diversas tecnologias para oferecer uma solução inovadora e eficiente aos nossos clientes.",
+                    techTitle: "Tecnologias Utilizadas",
+                    link1: "Página de Destino",
+                    link2: "Área do Cliente",
+                    techList: {
+                        one: "Django",
+                        two: "Python",
+                        three: "Open AI",
+                        four: "Consumo de API",
+                        five: "Figma",
+                        six: "WhatsApp API"
+                    }
+                },
+                
             },
             certificate: {
                 modal1: {
@@ -213,12 +231,12 @@ const messages = {
             aboutme: {
                 title: "Eu sou Luigi Toniolo",
                 subtitle1: 'Web developer',
-                subtitle: "Meu nome é Luigi Toniolo, sou cidadão brasileiro e italiano. Estou me formando em engenharia elétrica na Universidade Federal de São Carlos (UFSCar) localizada no estado de São Paulo, Brasil. Além de estudar engenharia, sou desenvolvedor web com grande conhecimento em programação front-end. Com isso, no meu trabalho atual, fui inserido em diversos projetos que utilizam alguns dos frameworks mais famosos como React Js, React Native, Angular, Flutter e WordPress. Neste último, tenho um alto nível de entendimento de como funciona e, além de dominar essa plataforma, tenho total domínio de alguns plugins como woocommerce, elementor, etc. Além dos frameworks usados ​​para desenvolver meus projetos, Possuo um alto nível de conhecimento nas seguintes linguagens de programação: JavaScript, Git, Html, CSS, Typescript, Dart, Python e C++. Também acho muito fácil seguir protótipos de design (UI/UX) como a plataforma figma. Por ter feito um intercâmbio estudantil em 2016 para a Itália, considero que tenho um conhecimento avançado da língua inglesa e uma proficiência básica da língua italiana.",
+                subtitle: "O meu nome é Luigi Toniolo, sou cidadão brasileiro e italiano. Sou estudante de Engenharia Elétrica na UFSCar e acumulo mais de 4 anos de experiência como Desenvolvedor Web. Orgulho-me não apenas de uma sólida formação académica, mas também de uma rica experiência prática em diversas áreas do desenvolvimento de software. A minha jornada na programação abrange uma variedade de linguagens, incluindo Python, JavaScript, HTML, CSS e SQL. Além disso, possuo proficiência em tecnologias como Django, React.JS, MySQL, Git e Figma, utilizando a metodologia ágil Scrum para otimizar o desenvolvimento de projetos. As minhas competências estendem-se para além do código, destacando-me pela facilidade com folhas de Excel, automação de dados e criação de dashboards analíticos, proporcionando uma visão estratégica aos projetos, com a eficiência esperada de ferramentas como o Power BI."
             },
             education: {
                 historyTitle: 'Minha Educação',
                 title: 'Formando-se em Engenharia Eletrotécnica',
-                subtitle: 'Universidade Federal de São Carlos / 2019 - Atual',
+                subtitle: 'Universidade Federal de São Carlos / 2019 - 2025',
                 content: 'Estou atualmente a estudar na Universidade Federal de São Carlos (UFSCar) no curso de engenharia elétrica. Participei em alguns projetos de extensão como a Baja e a Formula e isso acrescentou muito ao meu desenvolvimento profissional.'
             },
             personalSkills1: {
@@ -233,6 +251,11 @@ const messages = {
                 title: 'Gestor de projeto',
                 subtitle: 'Toniolo Joias / Jun 2020 - Fev 2021',
                 content: 'Desenvolvi e liderei um projeto inteiro para esta empresa. O projeto consistia em desenvolver do zero um e-commerce de joalharia usando o WordPress e o Woocommerce (Plugin). Como foi feito no WordPress, foi muito utilizado para o desenvolvimento deste e-commerce, todo o meu conhecimento de HTML5 e CSS3 e até scSS.  Além disso, todo o site foi otimizado para otimização do motor de busca (SEO). Após o final do desenvolvimento deste projeto, decidimos investir em anúncios como o Google e o Facebook para aumentar a visualização do nosso site. Com isto, atingimos mais de R$ 10k em vendas num período inferior a 1 mês. Além de investir no tráfego pago, investimos também no tráfego orgânico, como anteriormente afirmado, melhorando o SEO de cada website.'
+            },
+            personalSkills3: {
+                title: 'Wordpress developer',
+                subtitle: 'Aché Laboratórios / Mai 2023 - Atual',
+                content: 'Sou responsável pelo CMS do site da empresa usando o Wordpress. Trabalho com uma equipa completa de programadores, e estamos a desenvolver um projeto complexo para os laboratórios Aché.'
             }
         }
     }

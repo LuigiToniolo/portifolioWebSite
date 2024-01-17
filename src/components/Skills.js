@@ -26,24 +26,24 @@ export const Skills = () => {
 
   const skills = {
     skill1: {
-      percentage: '90%',
-      name: 'Html5 / CSS3 / SASS',
+      percentage: '85%',
+      name: 'Python',
     },
     skill2: {
       percentage: '85%',
       name: 'JavaScript',
     },
     skill3: {
-      percentage: '90%',
-      name: 'WordPress',
+      percentage: '80%',
+      name: 'Django',
     },
     skill4: {
-      percentage: '75%',
-      name: 'Dart / Flutter',
+      percentage: '80%',
+      name: 'Excel',
     },
     skill5: {
-      percentage: '90%',
-      name: 'React.Js',
+      percentage: '85%',
+      name: 'SQL (geral)',
     },
     skill6: {
       percentage: '75%',
@@ -58,12 +58,16 @@ export const Skills = () => {
       name: 'Git & GitHub',
     },
     skill9: {
-      percentage: '75%',
-      name: 'MySql',
+      percentage: '90%',
+      name: 'React.Js',
     },
     skill10: {
       percentage: '95%',
-      name: 'Jira / Figma',
+      name: 'Html5 / CSS3 / SASS',
+    },
+    skill11: {
+      percentage: '95%',
+      name: 'Scrum',
     },
   };
 
@@ -83,7 +87,7 @@ export const Skills = () => {
                               <div className="single-chart">
                                 <svg viewBox="0 0 36 36" className="circular-chart orange">
                                   <path className="circle"
-                                    stroke-dasharray="90, 100"
+                                    stroke-dasharray="85, 100"
                                     d="M18 2.0845
                                       a 15.9155 15.9155 0 0 1 0 31.831
                                       a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -121,7 +125,7 @@ export const Skills = () => {
                               <div className="single-chart">
                                 <svg viewBox="0 0 36 36" className="circular-chart orange">
                                   <path className="circle"
-                                    stroke-dasharray="90, 100"
+                                    stroke-dasharray="80, 100"
                                     d="M18 2.0845
                                       a 15.9155 15.9155 0 0 1 0 31.831
                                       a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -140,7 +144,7 @@ export const Skills = () => {
                               <div className="single-chart">
                                 <svg viewBox="0 0 36 36" className="circular-chart orange">
                                   <path className="circle"
-                                    stroke-dasharray="75, 100"
+                                    stroke-dasharray="80, 100"
                                     d="M18 2.0845
                                       a 15.9155 15.9155 0 0 1 0 31.831
                                       a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -159,7 +163,7 @@ export const Skills = () => {
                             <div className="single-chart">
                               <svg viewBox="0 0 36 36" className="circular-chart orange">
                                 <path className="circle"
-                                  stroke-dasharray="90, 100"
+                                  stroke-dasharray="85, 100"
                                   d="M18 2.0845
                                     a 15.9155 15.9155 0 0 1 0 31.831
                                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -235,7 +239,7 @@ export const Skills = () => {
                             <div className="single-chart">
                               <svg viewBox="0 0 36 36" className="circular-chart orange">
                                 <path className="circle"
-                                  stroke-dasharray="75, 100"
+                                  stroke-dasharray="90, 100"
                                   d="M18 2.0845
                                     a 15.9155 15.9155 0 0 1 0 31.831
                                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -264,6 +268,25 @@ export const Skills = () => {
                             </div>
                             <div className="percentage-text">
                               <h5>{skills.skill10.name}</h5>
+                            </div>
+
+                          </div>
+
+                          <div className="item">
+
+                            <div className="single-chart">
+                              <svg viewBox="0 0 36 36" className="circular-chart orange">
+                                <path className="circle"
+                                  stroke-dasharray="95, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="19.5" y="20.35" className="percentage">{skills.skill11.percentage}</text>
+                              </svg>
+                            </div>
+                            <div className="percentage-text">
+                              <h5>{skills.skill11.name}</h5>
                             </div>
 
                           </div>
