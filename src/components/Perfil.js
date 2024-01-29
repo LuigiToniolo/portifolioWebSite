@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/AboutMe.css';
-import FotoPerfil from '../assets/img/foto perfil nova.jpeg';
+import FotoPerfil from '../assets/img/nova_foto_perfil.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FooterPages } from './FooterPages';
 import { i18n } from "./MultiLingue/Translate/i18n";
